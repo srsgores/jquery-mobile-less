@@ -1,0 +1,148 @@
+.ui-popup-screen {
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); /* Necessary to set some form of background to ensure element is clickable in IE6/7. While legacy IE won't understand the data-URI'd image, it ensures no additional requests occur in all other browsers with little overhead. */
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 1px;
+	position: absolute;
+	filter: Alpha(Opacity=0);
+	opacity: 0;
+	z-index: 1099;
+}
+
+.ui-popup-open {
+	.ui-header-fixed, .ui-footer-fixed {
+		position: absolute !important;
+	}
+}
+
+.ui-popup-screen.in {
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);
+}
+
+.ui-popup-screen.out {
+	opacity: 0;
+	filter: Alpha(Opacity=0);
+}
+
+.ui-popup-container {
+	z-index: 1100;
+	display: inline-block;
+	position: absolute;
+	padding: 0;
+	outline: 0;
+	.ui-content {
+		> p, > h1, > h2, > h3, > h4, > h5, > h6 {
+			margin: .5em 0;
+		}
+		> p:first-child, > h1:first-child, > h2:first-child, > h3:first-child, > h4:first-child, > h5:first-child, > h6:first-child {
+			margin-top: 0;
+		}
+		> p:last-child, > h1:last-child, > h2:last-child, > h3:last-child, > h4:last-child, > h5:last-child, > h6:last-child {
+			margin-bottom: 0;
+		}
+		> span {
+			margin: 0;
+		}
+	}
+}
+
+.ui-popup {
+	position: relative;
+	> p, > h1, > h2, > h3, > h4, > h5, > h6 {
+		margin: .5em 7px;
+	}
+	> span {
+		display: block;
+		margin: .5em 7px;
+	}
+	.ui-title {
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+	> img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+		vertical-align: middle;
+	}
+	iframe {
+		vertical-align: middle;
+	}
+	> .ui-btn-left {
+		position: absolute;
+		top: -9px;
+		margin: 0;
+		z-index: 1101;
+		left: -9px;
+	}
+	> .ui-btn-right {
+		position: absolute;
+		top: -9px;
+		margin: 0;
+		z-index: 1101;
+		right: -9px;
+	}
+}
+
+.ui-popup.ui-content, .ui-popup .ui-content {
+	overflow: visible;
+}
+
+.ui-popup.ui-corner-all {
+	> .ui-header, &~ .ui-content, > .ui-content:first-child {
+		-webkit-border-top-left-radius: inherit;
+		border-top-left-radius: inherit;
+		-webkit-border-top-right-radius: inherit;
+		border-top-right-radius: inherit;
+	}
+	> .ui-content, > .ui-footer, > .ui-header:nth-child(n):last-child {
+		-webkit-border-bottom-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		-webkit-border-bottom-right-radius: inherit;
+		border-bottom-right-radius: inherit;
+	}
+	> .ui-content:nth-child(2), > .ui-header:nth-child(2) {
+		-webkit-border-top-left-radius: 0;
+		border-top-left-radius: 0;
+		-webkit-border-top-right-radius: 0;
+		border-top-right-radius: 0;
+	}
+	> .ui-content:nth-last-child(1n + 2), > .ui-footer:nth-last-child(1n + 2) {
+		-webkit-border-bottom-left-radius: 0;
+		border-bottom-left-radius: 0;
+		-webkit-border-bottom-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	> .ui-header:only-child, > .ui-footer:only-child {
+		-webkit-border-radius: inherit;
+		border-radius: inherit;
+	}
+}
+
+@media all and (min-width: 450px) {
+	.ui-popup .ui-field-contain label.ui-submit,
+	.ui-popup .ui-field-contain .ui-controlgroup-label,
+	.ui-popup .ui-field-contain label.ui-select,
+	.ui-popup .ui-field-contain label.ui-input-text {
+		font-size: 16px;
+		line-height: 1.4;
+		display: block;
+		font-weight: normal;
+		margin: 0 0 .3em;
+	}
+
+	.ui-popup .ui-field-contain .ui-btn.ui-submit,
+	.ui-popup .ui-field-contain .ui-controlgroup-controls,
+	.ui-popup .ui-field-contain .ui-select,
+	.ui-popup .ui-field-contain input.ui-input-text,
+	.ui-popup .ui-field-contain textarea.ui-input-text,
+	.ui-popup .ui-field-contain .ui-input-search {
+		width: 100%;
+		display: block;
+	}
+}

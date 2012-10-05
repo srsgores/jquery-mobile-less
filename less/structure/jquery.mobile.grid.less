@@ -1,0 +1,71 @@
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
+	overflow: hidden;
+}
+
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	min-height: 1px;
+}
+
+.ui-grid-solo .ui-block-a {
+	display: block;
+	float: none;
+}
+
+.ui-grid-a .ui-block-a {
+	width: 49.95%;
+	clear: left;
+}
+
+.ui-grid-a .ui-block-b {
+	width: 49.95%;
+}
+
+.ui-grid-a > :nth-child(n) {
+	width: 50%;
+	margin-right: -.5px;
+}
+
+.ui-grid-b {
+	.ui-block-b, .ui-block-c {
+		width: 33.25%;
+	}
+	.ui-block-a {
+		width: 33.25%;
+		clear: left;
+	}
+	> :nth-child(n) {
+		width: 33.333%;
+		margin-right: -.5px;
+	}
+}
+
+.ui-grid-c {
+	.ui-block-b, .ui-block-c, .ui-block-d {
+		width: 24.925%;
+	}
+	.ui-block-a {
+		width: 24.925%;
+		clear: left;
+	}
+	> :nth-child(n) {
+		width: 25%;
+		margin-right: -.5px;
+	}
+}
+
+.ui-grid-d {
+	.ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+		width: 19.925%;
+	}
+	.ui-block-a {
+		width: 19.925%;
+		clear: left;
+	}
+	> :nth-child(n) {
+		width: 20%;
+	}
+}

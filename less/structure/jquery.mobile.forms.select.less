@@ -1,0 +1,143 @@
+.ui-select {
+	display:block;
+	position:relative;
+	.ui-btn-icon-right .ui-btn-inner, .ui-li-has-count .ui-btn-inner {
+		padding-right:45px;
+	}
+	select {
+		position:absolute;
+		left:-9999px;
+		top:-9999px;
+	}
+	.ui-btn {
+		overflow:hidden;
+		opacity:1;
+		select {
+			cursor:pointer;
+			-webkit-appearance:none;
+			left:0;
+			top:0;
+			width:100%;
+			min-height:1.5em;
+			min-height:100%;
+			height:3em;
+			max-height:100%;
+			filter:Alpha(Opacity=0);
+			opacity:0;
+			z-index:2;
+		}
+	}
+	.ui-disabled {
+		opacity:.3;
+		select {
+			display:none;
+		}
+	}
+	.ui-btn.ui-select-nativeonly {
+		border-radius:0;
+		border:0;
+		select {
+			opacity:1;
+			text-indent:0;
+			display:block;
+		}
+	}
+	.ui-disabled.ui-select-nativeonly .ui-btn-inner {
+		opacity:0;
+	}
+	.ui-mini.ui-btn-icon-right .ui-btn-inner {
+		padding-right:32px;
+	}
+	.ui-mini.ui-btn-icon-right .ui-icon {
+		right:7px;
+	}
+	.ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+		padding-right:80px;
+	}
+	.ui-btn-icon-right.ui-li-has-count .ui-li-count {
+		right:45px;
+	}
+	.ui-mini.ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+		padding-right:67px;
+	}
+	.ui-mini.ui-btn-icon-right.ui-li-has-count .ui-li-count {
+		right:32px;
+	}
+	.ui-btn-icon-right .ui-icon {
+		right:15px;
+	}
+	.ui-btn-text {
+		display:block;
+		min-height:1em;
+		overflow:hidden !important;
+		text-overflow:ellipsis;
+	}
+}
+.ui-field-contain .ui-select .ui-btn {
+	margin:0;
+}
+label.ui-select {
+	font-size:16px;
+	line-height:1.4;
+	font-weight:normal;
+	margin:0 0 .3em;
+	display:block;
+}
+.ui-selectmenu {
+	padding:6px;
+	min-width:160px;
+	.ui-btn-text {
+		display:block;
+		min-height:1em;
+		overflow:hidden !important;
+	}
+	.ui-listview {
+		margin:0;
+	}
+	.ui-btn.ui-li-divider {
+		cursor:default;
+	}
+	.ui-header {
+		margin:0;
+		padding:0;
+		.ui-title {
+			margin:0.6em 46px 0.8em;
+		}
+		h1:after {
+			content:'.';
+			visibility:hidden;
+		}
+	}
+}
+.ui-selectmenu-hidden {
+	top:-99999px;
+	left:-9999px;
+}
+.ui-screen-hidden {
+	display:none;
+}
+.ui-selectmenu-list .ui-li .ui-icon {
+	display:none;
+	display:block;
+}
+.ui-li.ui-selectmenu-placeholder {
+	display:none;
+}
+
+@media all and (min-width: 450px) {
+	.ui-field-contain label.ui-select {
+		vertical-align: top;
+		display: inline-block;
+		width: 20%;
+		margin: 0 2% 0 0;
+	}
+
+	.ui-field-contain .ui-select {
+		width: 78%;
+		display: inline-block;
+	}
+
+	.ui-hide-label .ui-select {
+		width: 100%;
+	}
+}

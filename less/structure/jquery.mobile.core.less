@@ -1,0 +1,236 @@
+.ui-mobile {
+	body {
+		height: 99.9%;
+	}
+	&[data-role=page], &[data-role=dialog], .ui-page {
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100%;
+		position: absolute;
+		display: none;
+		border: 0;
+	}
+	fieldset, .ui-page {
+		padding: 0;
+		margin: 0;
+		border-width: 0;
+	}
+	a img {
+		border-width: 0;
+	}
+	.ui-page-active {
+		display: block;
+		overflow: visible;
+	}
+}
+
+.ui-page {
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	display: none;
+	border: 0;
+	outline: none;
+}
+
+.ui-mobile-viewport {
+	margin: 0;
+	overflow-x: visible;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body.ui-mobile-viewport, div.ui-mobile-viewport {
+	overflow-x: hidden;
+}
+
+.ui-loading .ui-loader {
+	display: block;
+}
+
+.ui-loader {
+	display: none;
+	z-index: 9999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border: 0;
+	.ui-icon {
+		background-color: #000000;
+		display: block;
+		margin: 0;
+		width: 44px;
+		height: 44px;
+		padding: 1px;
+		-webkit-border-radius: 36px;
+		-moz-border-radius: 36px;
+		border-radius: 36px;
+	}
+}
+
+.ui-loader-default {
+	background: none;
+	.opacity(18);
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	margin-top: -23px;
+	h1 {
+		font-size: 0;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+}
+
+.ui-loader-verbose {
+	width: 200px;
+	.opacity(88);
+	.box-shadow(0 1px 1px -1px #ffffff);
+	height: auto;
+	margin-left: -110px;
+	margin-top: -43px;
+	padding: 10px;
+	h1 {
+		font-size: 16px;
+		margin: 0;
+		text-align: center;
+	}
+	.ui-icon {
+		margin: 0 auto 10px;
+		.opacity(75);
+	}
+}
+
+.ui-loader-textonly {
+	padding: 15px;
+	margin-left: -115px;
+	.ui-icon {
+		display: none;
+	}
+}
+
+.ui-loader-fakefix {
+	position: absolute;
+}
+
+.ui-mobile-rendering > * {
+	visibility: hidden;
+}
+
+.ui-bar {
+	position: relative;
+	padding: .4em 15px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+	font-size: 16px;
+	margin: 0;
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		display: inline-block;
+	}
+}
+
+.ui-body {
+	position: relative;
+	padding: .4em 15px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+
+.ui-header, .ui-footer {
+	position: relative;
+	border-left-width: 0;
+	border-right-width: 0;
+	zoom: 1;
+}
+
+.ui-header .ui-btn-left, .ui-footer .ui-btn-left {
+	position: absolute;
+	top: 3px;
+	left: 5px;
+}
+
+.ui-header .ui-btn-right, .ui-footer .ui-btn-right {
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+.ui-footer .ui-btn-icon-notext, .ui-header .ui-btn-icon-notext {
+	top: 6px;
+}
+
+.ui-header .ui-title {
+	min-height: 1.1em;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	margin: .6em 30% .8em;
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: 0 !important;
+}
+
+.ui-footer .ui-title {
+	min-height: 1.1em;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	margin: .6em 30% .8em;
+	margin: .6em 15px .8em;
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: 0 !important;
+}
+
+.ui-content {
+	border-width: 0;
+	overflow: visible;
+	overflow-x: hidden;
+	padding: 15px;
+}
+
+.ui-icon {
+	width: 18px;
+	height: 18px;
+}
+
+.ui-nojs {
+	position: absolute;
+	left: -9999px;
+}
+
+.ui-hide-label label.ui-input-text, .ui-hide-label label.ui-select, .ui-hide-label label.ui-slider, .ui-hide-label label.ui-submit, .ui-hide-label .ui-controlgroup-label, .ui-hidden-accessible {
+	position: absolute !important;
+	left: -9999px;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*orientations from js are available */
+@media screen and (orientation: portrait) {
+	.ui-mobile, .ui-mobile .ui-page {
+		min-height: 420px;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.ui-mobile, .ui-mobile .ui-page {
+		min-height: 300px;
+	}
+}
