@@ -20,10 +20,50 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="tests.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/tests.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.5816092">
+            <state line="4" column="76" selection-start="58" selection-end="130" vertical-scroll-proportion="-2.875">
+              <folding>
+                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="starter-blank.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/starter-blank.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="41" selection-start="2646" selection-end="2672" vertical-scroll-proportion="-44.5625">
+              <folding>
+                <marker date="1349824129593" expanded="true" signature="385:434" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.structure.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="button-markup.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../jquery-mobile/tests/functional/button-markup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.6777164">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.transition.slidefade.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.slidefade.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -37,30 +77,32 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.textinput.less" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.listview.less" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.navbar.less" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.transition.fade.less" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.transition.less" />
-        <option value="$PROJECT_DIR$/less/themes/default/jquery.mobile.less" />
-        <option value="$PROJECT_DIR$/less/structure/mixins.less" />
-        <option value="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.structure.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.fixedToolbar.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.select.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.textinput.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.popup.less" />
-        <option value="$PROJECT_DIR$/css/structure/jquery.mobile.button.css" />
-        <option value="$PROJECT_DIR$/css/structure/jquery.mobile.popup.css" />
-        <option value="$PROJECT_DIR$/css/structure/jquery.mobile.fixedToolbar.css" />
-        <option value="$PROJECT_DIR$/css/structure/jquery.mobile.core.css" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.core.less" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.transition.fade.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.transition.slide.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.transition.slidefade.less" />
+        <option value="$USER_HOME$/Desktop/jquery.mobile.structure.css" />
+        <option value="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" />
+        <option value="$PROJECT_DIR$/tests/tests.html" />
+        <option value="$PROJECT_DIR$/tests/navigation.html" />
+        <option value="$PROJECT_DIR$/tests/starter-blank.html" />
+        <option value="$PROJECT_DIR$/tests/docs/about/accessibility.html" />
+        <option value="$PROJECT_DIR$/tests/docs/nav.html" />
+        <option value="$PROJECT_DIR$/tests/docs/index.html" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -112,7 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -131,15 +172,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-mobile-less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="editing.templates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/less" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_8810fd5c2c79c73adcc73fd0825f3b32fdb816e7/libexec/git-core/git.exe" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -165,6 +258,13 @@
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -205,6 +305,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -217,7 +318,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -276,64 +376,97 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.grid.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="267" selection-end="267" vertical-scroll-proportion="-0.65411764" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.slide.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.flow.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/themes/default/index.php">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.slidein.keyframes.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/variables.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.slideup.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/mixins.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.turn.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.transition.slidefade.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="55" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.popup.less">
+    <entry file="file://$USER_HOME$/Desktop/jquery.mobile.structure.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="630" selection-end="640" vertical-scroll-proportion="0.59043175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.fixedToolbar.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="283" selection-end="293" vertical-scroll-proportion="0.52873564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="48" selection-end="48" vertical-scroll-proportion="0.027058823" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.core.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="21" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0" />
+        <state line="3722" column="23" selection-start="91580" selection-end="91583" vertical-scroll-proportion="-11.710909">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="299" column="9" selection-start="7711" selection-end="7711" vertical-scroll-proportion="0.03" />
+        <state line="1197" column="36" selection-start="28992" selection-end="28992" vertical-scroll-proportion="0.5">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/tests/tests.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.5816092">
+        <state line="4" column="76" selection-start="58" selection-end="130" vertical-scroll-proportion="-2.875">
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/starter-blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="41" selection-start="2646" selection-end="2672" vertical-scroll-proportion="-44.5625">
+          <folding>
+            <marker date="1349824129593" expanded="true" signature="385:434" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jquery-mobile/tests/functional/button-markup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.6777164">
           <folding />
         </state>
       </provider>

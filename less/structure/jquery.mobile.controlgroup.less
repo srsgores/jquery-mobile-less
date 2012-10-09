@@ -19,7 +19,7 @@
 }
 
 .ui-controlgroup-label {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 .4em;
@@ -27,7 +27,7 @@
 
 .ui-controlgroup {
 	.ui-checkbox label, .ui-radio label {
-		font-size: 16px;
+		font-size: @baseFontSize;
 	}
 	li {
 		list-style: none;
@@ -95,16 +95,16 @@
 		zoom: 1;
 	}
 	.ui-btn-inner {
-		text-align: center;
+		.centred;
 	}
 }
 
 .ui-controlgroup.ui-mini .ui-btn-icon-notext .ui-btn-inner, .ui-header .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner, .ui-footer .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
-	height: 16px;
+	height: @baseFontSize;
 	padding: .55em 11px .5em 11px;
 }
 
 .ui-controlgroup-horizontal.ui-mini .ui-btn-inner {
-	height: 16px;
-	line-height: 16px;
+	height: @baseFontSize;
+	line-height: @baseFontSize;
 }

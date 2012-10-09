@@ -16,6 +16,19 @@
     Also, make sure to include this file: @include "mixins.less"
 
 --------------------------------------------------------------------------------------------------------------------- */
+.right-icon(@icon-ascii){
+	content: @icon-ascii;
+	font-size: 1.2em;
+	font-family: "IcoMoon";
+	float: right;
+}
+
+.left-icon(@icon-ascii){
+	content: @icon-ascii;
+	font-size: 1.2em;
+	font-family: "IcoMoon";
+	float: left;
+}
 
 /* =============================================================================
 Site-wide rules
@@ -92,22 +105,8 @@ Site-wide rules
 	transition: all @transition-time linear;
 }
 
-.right-icon(@icon-ascii){
-	content: @icon-ascii;
-	font-size: 1.2em;
-	font-family: "FontAwesome";
-	float: right;
-}
-
-.left-icon(@icon-ascii){
-	content: @icon-ascii;
-	font-size: 1.2em;
-	font-family: "FontAwesome";
-	float: left;
-}
-
 .border-box {
-	.border-box;
+	.box-sizing(border-box);
 }
 // UTILITY MIXINS
 // --------------------------------------------------

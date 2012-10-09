@@ -58,34 +58,22 @@
 
 .ui-overlay-a {
 	border: 1px solid #444444;
-	background: #222222;
 	color: #ffffff;
 	text-shadow: 0 1px 1px #111111;
 	font-weight: normal;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
-	background-image: -webkit-linear-gradient(#444444, #222222);
-	background-image: -moz-linear-gradient(#444444, #222222);
-	background-image: -ms-linear-gradient(#444444, #222222);
-	background-image: -o-linear-gradient(#444444, #222222);
-	background-image: linear-gradient(#444444, #222222);
-	background-image: none;
+	#gradient > .vertical(#444444, #222222);
 	border-width: 0;
 }
 
 .ui-btn-up-a {
 	border: 1px solid #111111;
-	background: #333333;
 	font-weight: bold;
 	color: #ffffff;
 	text-shadow: 0 1px 1px #111111;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#2d2d2d));
-	background-image: -webkit-linear-gradient(#444444, #2d2d2d);
-	background-image: -moz-linear-gradient(#444444, #2d2d2d);
-	background-image: -ms-linear-gradient(#444444, #2d2d2d);
-	background-image: -o-linear-gradient(#444444, #2d2d2d);
-	background-image: linear-gradient(#444444, #2d2d2d);
+	#gradient > .vertical(#444444, #2d2d2d);
 	font-family: @baseFontFamily;
 	text-decoration: none;
+	background: #333333;
 }
 
 .ui-btn-up-a:visited, .ui-btn-up-a a.ui-link-inherit {
@@ -157,12 +145,7 @@
 	color: #222222;
 	text-shadow: 0 1px 0 #ffffff;
 	font-weight: normal;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#cccccc));
-	background-image: -webkit-linear-gradient(#dddddd, #cccccc);
-	background-image: -moz-linear-gradient(#dddddd, #cccccc);
-	background-image: -ms-linear-gradient(#dddddd, #cccccc);
-	background-image: -o-linear-gradient(#dddddd, #cccccc);
-	background-image: linear-gradient(#dddddd, #cccccc);
+	#gradient > .vertical(#dddddd, #cccccc);
 	font-family: @baseFontFamily;
 	input, select, textarea, button {
 		font-family: @baseFontFamily;
@@ -795,8 +778,7 @@ a.ui-link-inherit {
 }
 
 .ui-disabled {
-	filter: Alpha(Opacity = 30);
-	opacity: .3;
+	.opacity(30);
 	zoom: 1;
 	cursor: default !important;
 	pointer-events: none;
@@ -809,28 +791,24 @@ a.ui-link-inherit {
 .ui-icon {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	background-image: url(images/icons-18-white.png);
+	background-image: ~"url(images/icons-18-white.png)";
 	background-repeat: no-repeat;
-	-moz-border-radius: 9px;
-	-webkit-border-radius: 9px;
-	border-radius: 9px;
+	.rounded-corners(9px);
 }
 
 .ui-icon-searchfield:after {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	background-image: url(images/icons-18-white.png);
+	background-image: ~"url(images/icons-18-white.png)";
 	background-repeat: no-repeat;
-	-moz-border-radius: 9px;
-	-webkit-border-radius: 9px;
-	border-radius: 9px;
+	.rounded-corners(9px);
 	background-position: -612px 50%;
 }
 
 .ui-icon-alt {
 	background: #ffffff;
 	background: rgba(255, 255, 255, 0.3);
-	background-image: url(images/icons-18-black.png);
+	background-image: ~"url(images/icons-18-black.png)";
 	background-repeat: no-repeat;
 }
 
@@ -925,9 +903,7 @@ a.ui-link-inherit {
 }
 
 .ui-checkbox .ui-icon, .ui-selectmenu-list .ui-icon {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	.rounded-corners(3px);
 }
 
 .ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon {
@@ -935,7 +911,7 @@ a.ui-link-inherit {
 }
 
 .ui-icon-loading {
-	background: url(images/ajax-loader.gif);
+	background: ~"url(images/ajax-loader.gif)";
 	background-size: 46px 46px;
 }
 
@@ -1008,56 +984,40 @@ a.ui-link-inherit {
 }
 
 .ui-btn-corner-all {
-	-moz-border-radius: 1em;
-	-webkit-border-radius: 1em;
-	border-radius: 1em;
-	.padding-fix;
+	.rounded-corners(1em);
 }
 
 .ui-overlay {
 	background: #666666;
-	filter: Alpha(Opacity=50);
-	opacity: .5;
+	.opacity(50);
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
 .ui-overlay-shadow {
-	-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
-	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
-	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+	.box-shadow(0px 0px 12px rgba(0, 0, 0, 0.6));
 }
 
 .ui-shadow {
-	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+	.box-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
 }
 
 .ui-bar-a .ui-shadow, .ui-bar-b .ui-shadow, .ui-bar-c .ui-shadow {
-	-moz-box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.3);
-	-webkit-box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.3);
-	box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.3);
+	.box-shadow(0px 1px 0 rgba(255, 255, 255, 0.3));
 }
 
 .ui-shadow-inset {
-	-moz-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+	.box-shadow(inset 0px 1px 4px rgba(0, 0, 0, 0.2));
 }
 
 .ui-icon-shadow {
-	-moz-box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
-	-webkit-box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
-	box-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
+	.box-shadow(0px 1px 0 rgba(255, 255, 255, 0.4));
 }
 
 .ui-btn:focus {
 	outline: 0;
-	-moz-box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
-	-webkit-box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
-	box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
+	.box-shadow(inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe);
 }
 
 .ui-link-inherit:focus {
@@ -1069,15 +1029,11 @@ a.ui-link-inherit {
 }
 
 .ui-focus {
-	-moz-box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
-	-webkit-box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
-	box-shadow: inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe;
+	.box-shadow(inset 0px 0px 3px #387bbe, 0px 0px 9px #387bbe);
 }
 
 .ui-input-text.ui-focus, .ui-input-search.ui-focus {
-	-moz-box-shadow: 0px 0px 12px #387bbe;
-	-webkit-box-shadow: 0px 0px 12px #387bbe;
-	box-shadow: 0px 0px 12px #387bbe;
+	.box-shadow(0px 0px 12px #387bbe);
 }
 
 .ui-mobile-nosupport-boxshadow {
@@ -1086,20 +1042,156 @@ a.ui-link-inherit {
 		outline-style: auto;
 	}
 	* {
-		-moz-box-shadow: none !important;
-		-webkit-box-shadow: none !important;
-		box-shadow: none !important;
+		.box-shadow(none) !important;
 	}
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+
+/* --- media queries ------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1600px){
+}
+
+@media screen and (max-width: 1400px){
+
+}
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 1100px){
+}
+
+@media screen and (max-width: 1000px){
+}
+
+@media screen and (max-width: 800px){
+}
+
+@media screen and (max-width: 768px){
+}
+
+@media screen and (max-width: 640px){
+/* to avoid the adjustment of fonts on iOS devices you should keep this line */
+	* { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+}
+
+@media screen and (max-width: 600px){
+}
+
+@media screen and (max-width: 480px){
+}
+
+@media screen and (max-width: 400px){
+}
+
+@media screen and (max-width: 320px){
+}
+
+
+/* --- iPad --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape){
+}
+
+
+/* --- iPhone 4(S) retina ------------------------------------------------------------------------------------------- */
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5){
+
+}
+
+
+/* --- iPhone ------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 1), screen and (max-device-width: 640px) and (device-pixel-ratio: 1){
+}
+
+
+/* --- print (optional) --------------------------------------------------------------------------------------------- */
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow:none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+/*
+ * Don't show links for images, or javascript/internal links
+ */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: ~"240dpi") {
 
 	.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
 	.ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
 	.ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
 	.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-search, .ui-icon-searchfield:after,
 	.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-		background-image: url(images/icons-36-white.png);
+		background-image: ~"url(images/icons-36-white.png)";
 		-moz-background-size: 776px 18px;
 		-o-background-size: 776px 18px;
 		-webkit-background-size: 776px 18px;
@@ -1107,6 +1199,6 @@ a.ui-link-inherit {
 	}
 
 	.ui-icon-alt {
-		background-image: url(images/icons-36-black.png);
+		background-image: ~"url(images/icons-36-black.png)";
 	}
 }

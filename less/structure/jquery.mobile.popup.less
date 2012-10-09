@@ -5,8 +5,7 @@
 	right: 0px;
 	bottom: 1px;
 	position: absolute;
-	filter: Alpha(Opacity=0);
-	opacity: 0;
+	.opacity(0);
 	z-index: 1099;
 }
 
@@ -17,13 +16,11 @@
 }
 
 .ui-popup-screen.in {
-	opacity: 0.5;
-	filter: Alpha(Opacity=50);
+	.opacity(50);
 }
 
 .ui-popup-screen.out {
-	opacity: 0;
-	filter: Alpha(Opacity=0);
+	.opacity(0);
 }
 
 .ui-popup-container {
@@ -58,7 +55,7 @@
 		margin: .5em 7px;
 	}
 	.ui-title {
-		font-size: 16px;
+		font-size: @baseFontSize;
 		font-weight: bold;
 		margin-top: .5em;
 		margin-bottom: .5em;
@@ -129,7 +126,7 @@
 	.ui-popup .ui-field-contain .ui-controlgroup-label,
 	.ui-popup .ui-field-contain label.ui-select,
 	.ui-popup .ui-field-contain label.ui-input-text {
-		font-size: 16px;
+		font-size: @baseFontSize;
 		line-height: 1.4;
 		display: block;
 		font-weight: normal;

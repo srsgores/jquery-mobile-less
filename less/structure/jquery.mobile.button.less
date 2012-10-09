@@ -1,6 +1,6 @@
 .ui-btn {
 	display: block;
-	text-align: center;
+	.centred;
 	cursor: pointer;
 	position: relative;
 	margin: @buttonMargin 0;
@@ -28,7 +28,7 @@
 }
 
 .ui-btn-inner {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	padding: .6em 20px;
 	min-width: .75em;
 	display: block;
@@ -64,7 +64,7 @@
 }
 
 .ui-fullsize .ui-btn-inner {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	padding: .6em 20px;
 }
 
@@ -212,7 +212,7 @@
 }
 
 label.ui-submit {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 .3em;

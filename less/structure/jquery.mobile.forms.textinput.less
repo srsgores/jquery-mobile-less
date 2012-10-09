@@ -1,5 +1,5 @@
 label.ui-input-text {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	line-height: 1.4;
 	display: block;
 	font-weight: normal;
@@ -11,7 +11,7 @@ input.ui-input-text {
 	padding: .4em;
 	margin: .5em 0;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	display: block;
 	width: 100%;
 	outline: 0;
@@ -24,7 +24,7 @@ textarea.ui-input-text {
 	padding: .4em;
 	margin: .5em 0;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	display: block;
 	width: 100%;
 	outline: 0;
@@ -84,7 +84,7 @@ input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini {
 	content: "";
 	width: 18px;
 	height: 18px;
-	opacity: .5;
+	.opacity(50);
 }
 
 .ui-mini .ui-input-clear {

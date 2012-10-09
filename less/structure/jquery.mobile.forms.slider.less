@@ -1,5 +1,5 @@
 label.ui-slider {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 .3em;
@@ -13,7 +13,7 @@ input.ui-slider-input {
 	padding: .4em;
 	margin: .5em 0;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	outline: 0;
 	.box-sizing(content-box);
 }
@@ -26,7 +26,7 @@ input.ui-slider-input {
 	margin: .5em 0;
 	margin: 0;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	outline: 0;
 	.box-sizing(content-box);
 }
@@ -110,7 +110,7 @@ a.ui-slider-handle-snapping {
 }
 
 .ui-slider-inneroffset {
-	margin: 0 16px;
+	margin: 0 @baseFontSize;
 	position: relative;
 	z-index: 1;
 }
@@ -136,10 +136,10 @@ div.ui-slider-switch.ui-slider-mini {
 
 span.ui-slider-label {
 	position: absolute;
-	text-align: center;
+	.centred;
 	width: 100%;
 	overflow: hidden;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	top: 0;
 	line-height: 2;
 	min-height: 100%;
