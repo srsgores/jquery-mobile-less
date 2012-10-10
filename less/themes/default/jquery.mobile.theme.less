@@ -791,18 +791,18 @@ a.ui-link-inherit {
 .ui-icon {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	background-image: ~"url(images/icons-18-white.png)";
-	background-repeat: no-repeat;
 	.rounded-corners(9px);
+	font-size: @baseFontSize; //.icon-;
 }
 
 .ui-icon-searchfield:after {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	background-image: ~"url(images/icons-18-white.png)";
-	background-repeat: no-repeat;
 	.rounded-corners(9px);
-	background-position: -612px 50%;
+	.just-icon(@icon-search);
+	.centred;
+	left: 7px;
+	font-size: 12px;
 }
 
 .ui-icon-alt {
@@ -813,93 +813,136 @@ a.ui-link-inherit {
 }
 
 .ui-icon-plus {
-	background-position: -0 50%;
+	&:before {
+		.just-icon(@icon-plus);
+	}
 }
 
 .ui-icon-minus {
-	background-position: -36px 50%;
+	&:before {
+		.just-icon(@icon-minus);
+	}
 }
 
 .ui-icon-delete {
-	background-position: -72px 50%;
+	&:before {
+		.just-icon(@icon-cancel);
+	}
 }
 
 .ui-icon-arrow-r {
-	background-position: -108px 50%;
+	&:before {
+		.just-icon(@icon-arrow-right);
+	}
 }
 
 .ui-icon-arrow-l {
-	background-position: -144px 50%;
+	&:before {
+		.just-icon(@icon-arrow-left);
+	}
 }
 
 .ui-icon-arrow-u {
-	background-position: -180px 50%;
+	&:before {
+		.just-icon(@icon-arrow-up);
+	}
 }
 
 .ui-icon-arrow-d {
-	background-position: -216px 50%;
+	&:before {
+		.just-icon(@icon-arrow-down);
+	}
 }
 
 .ui-icon-check {
-	background-position: -252px 50%;
+	&:before {
+		.just-icon(@icon-checkmark-2);
+	}
 }
 
 .ui-icon-gear {
-	background-position: -288px 50%;
+	&:before {
+		.just-icon(@icon-cog);
+	}
 }
 
 .ui-icon-refresh {
-	background-position: -324px 50%;
+	&:before {
+		.just-icon(@icon-refresh);
+	}
 }
 
 .ui-icon-forward {
-	background-position: -360px 50%;
+	&:before {
+		.just-icon(@icon-forward);
+	}
 }
 
 .ui-icon-back {
-	background-position: -396px 50%;
+	&:before {
+		.just-icon(@icon-reply);
+	}
 }
 
 .ui-icon-grid {
-	background-position: -432px 50%;
+	&:before {
+		.just-icon(@icon-grid-view);
+	}
 }
 
 .ui-icon-star {
-	background-position: -468px 50%;
+	&:before {
+		.just-icon(@icon-star);
+	}
 }
 
 .ui-icon-alert {
-	background-position: -504px 50%;
+	&:before {
+		.just-icon(@icon-warning);
+	}
 }
 
 .ui-icon-info {
-	background-position: -540px 50%;
+	&:before {
+		.just-icon(@icon-info);
+	}
 }
 
 .ui-icon-home {
-	background-position: -576px 50%;
+	&:before {
+		.just-icon(@icon-home);
+	}
 }
 
 .ui-icon-search {
-	background-position: -612px 50%;
+	&:before {
+		.just-icon(@icon-search);
+	}
 }
 
 .ui-icon-checkbox-off {
-	background-position: -684px 50%;
-	background-color: transparent;
+	&:before {
+		.just-icon(@icon-unchecked);
+	}
 }
 
 .ui-icon-checkbox-on {
-	background-position: -648px 50%;
+	&:before {
+		.just-icon(@icon-checked);
+	}
 }
 
 .ui-icon-radio-off {
-	background-position: -756px 50%;
-	background-color: transparent;
+	&:before {
+		.just-icon(@icon-partial);
+		text-shadow: 0 0 14px #535353;
+	}
 }
 
 .ui-icon-radio-on {
-	background-position: -720px 50%;
+	&:before {
+		.just-icon(@icon-partial);
+	}
 }
 
 .ui-checkbox .ui-icon, .ui-selectmenu-list .ui-icon {
@@ -911,8 +954,9 @@ a.ui-link-inherit {
 }
 
 .ui-icon-loading {
-	background: ~"url(images/ajax-loader.gif)";
-	background-size: 46px 46px;
+	&:before {
+		.just-icon(@icon-loading);
+	}
 }
 
 .ui-btn-corner-tl {
@@ -1046,70 +1090,68 @@ a.ui-link-inherit {
 	}
 }
 
-
 /* --- media queries ------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
 /* to avoid the adjustment of fonts on iOS devices you should keep this line */
-	* { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+	* {
+		-webkit-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 }
-
 
 /* --- iPad --------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait){
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape){
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 }
-
 
 /* --- iPhone 4(S) retina ------------------------------------------------------------------------------------------- */
 
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5){
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-device-pixel-ratio: 1.5) {
 
 }
-
 
 /* --- iPhone ------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 1), screen and (max-device-width: 640px) and (device-pixel-ratio: 1){
+@media screen and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 1), screen and (max-device-width: 640px) and (device-pixel-ratio: 1) {
 }
-
 
 /* --- print (optional) --------------------------------------------------------------------------------------------- */
 
@@ -1122,7 +1164,7 @@ a.ui-link-inherit {
 	* {
 		background: transparent !important;
 		color: #000 !important; /* Black prints faster: h5bp.com/s */
-		box-shadow:none !important;
+		box-shadow: none !important;
 		text-shadow: none !important;
 	}
 
@@ -1184,21 +1226,6 @@ a.ui-link-inherit {
 		page-break-after: avoid;
 	}
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: ~"240dpi") {
-
-	.ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r,
-	.ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check,
-	.ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back,
-	.ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-search, .ui-icon-searchfield:after,
-	.ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
-		background-image: ~"url(images/icons-36-white.png)";
-		-moz-background-size: 776px 18px;
-		-o-background-size: 776px 18px;
-		-webkit-background-size: 776px 18px;
-		background-size: 776px 18px;
-	}
-
-	.ui-icon-alt {
-		background-image: ~"url(images/icons-36-black.png)";
-	}
 }
