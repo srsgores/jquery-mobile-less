@@ -58,11 +58,12 @@
 
 .ui-overlay-a {
 	border: 1px solid #444444;
+	border-width: 0;
 	color: #ffffff;
 	text-shadow: 0 1px 1px #111111;
 	font-weight: normal;
 	#gradient > .vertical(#444444, #222222);
-	border-width: 0;
+	background-image: none;
 }
 
 .ui-btn-up-a {
@@ -70,10 +71,11 @@
 	font-weight: bold;
 	color: #ffffff;
 	text-shadow: 0 1px 1px #111111;
+	background: #333333;
 	#gradient > .vertical(#444444, #2d2d2d);
 	font-family: @baseFontFamily;
 	text-decoration: none;
-	background: #333333;
+
 }
 
 .ui-btn-up-a:visited, .ui-btn-up-a a.ui-link-inherit {
@@ -294,8 +296,9 @@
 	font-weight: bold;
 	color: #222222;
 	text-shadow: 0 1px 0 #ffffff;
-	#gradient > .vertical(#ffffff, #f1f1f1);
 	background: #eeeeee;
+	#gradient > .vertical(#ffffff, #f1f1f1);
+
 	font-family: @baseFontFamily;
 	text-decoration: none;
 }
@@ -310,8 +313,9 @@
 	font-weight: bold;
 	color: #222222;
 	text-shadow: 0 1px 0 #ffffff;
-	#gradient > .vertical(#f6f6f6, #e0e0e0);
 	background: #dfdfdf;
+	#gradient > .vertical(#f6f6f6, #e0e0e0);
+
 	font-family: @baseFontFamily;
 	text-decoration: none;
 }
@@ -406,9 +410,9 @@
 	font-weight: bold;
 	color: #333333;
 	text-shadow: 0 1px 0 #ffffff;
+	background: #ffffff;
 	#gradient > .vertical(#fafafa, #f6f6f6);
 	font-family: @baseFontFamily;
-	background: #ffffff;
 	text-decoration: none;
 }
 
@@ -423,9 +427,10 @@
 	color: #333333;
 	cursor: pointer;
 	text-shadow: 0 1px 0 #ffffff;
+	background: #eeeeee;
 	#gradient > .vertical(#eeeeee, #ffffff);
 	font-family: @baseFontFamily;
-	background: #eeeeee;
+
 	text-decoration: none;
 }
 
@@ -536,8 +541,8 @@
 	font-weight: bold;
 	color: #111111;
 	text-shadow: 0 1px 0 #ffffff;
-	#gradient > .vertical(#fff5ba, #fbdd52);
 	background: #fbe26f;
+	#gradient > .vertical(#fff5ba, #fbdd52);
 	font-family: @baseFontFamily;
 	text-decoration: none;
 }

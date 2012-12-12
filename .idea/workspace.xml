@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cd45be2-3d0d-4ed9-867f-cc85fab9e0fa" name="Default" comment="" />
+    <list default="true" id="5cd45be2-3d0d-4ed9-867f-cc85fab9e0fa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/structure/jquery.mobile.core.less" afterPath="$PROJECT_DIR$/less/structure/jquery.mobile.core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/structure/mixins.less" afterPath="$PROJECT_DIR$/less/structure/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" afterPath="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/css/jquery.mobile.css" afterPath="$PROJECT_DIR$/tests/css/jquery.mobile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/docs/pages/multipage-template.html" afterPath="$PROJECT_DIR$/tests/docs/pages/multipage-template.html" />
+    </list>
     <ignored path="jquery-mobile.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,60 +32,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jquery.mobile.structure.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icomoon.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/icomoon/icomoon.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1818" column="10" selection-start="22194" selection-end="22198" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.mobile.theme.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.mobile.collapsible.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.collapsible.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="23" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.4990991">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/variables.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="143" selection-end="143" vertical-scroll-proportion="-5.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.mobile.forms.textinput.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.textinput.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="17" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery.mobile.forms.fieldcontain.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.fieldcontain.less">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,19 +41,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.mobile.forms.slider.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.slider.less">
+      <file leaf-file-name="jquery.mobile.theme.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="5" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.0">
+            <state line="65" column="27" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.65265083">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.mobile.controlgroup.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.controlgroup.less">
+      <file leaf-file-name="jquery.mobile.core.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.core.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="30" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+            <state line="227" column="20" selection-start="3650" selection-end="3655" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.collapsible.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.collapsible.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="4" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.structure.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="30" selection-start="0" selection-end="1219" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.forms.checkboxradio.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.checkboxradio.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="1" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +89,36 @@
       <file leaf-file-name="mixins.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/structure/mixins.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="11" selection-start="3488" selection-end="3498" vertical-scroll-proportion="-5.96">
+            <state line="490" column="122" selection-start="14201" selection-end="14201" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ios-part-2.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://H:/Downloads/uTorrent/Completed Downloads/learnable - iOS Programming 2/ios-part-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="7" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-3.6764705">
+              <folding>
+                <marker date="1352441670554" expanded="true" signature="385:434" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multipage-template (1).html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/docs/pages/multipage-template (1).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-8.088235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.mobile.button.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.button.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="23" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tests/starter-blank.html" />
-        <option value="$PROJECT_DIR$/tests/docs/nav.html" />
-        <option value="$PROJECT_DIR$/tests/docs/index.html" />
-        <option value="$PROJECT_DIR$/less/structure/icomoon/defs.less" />
-        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.structure.less" />
-        <option value="$PROJECT_DIR$/less/structure/icomoon/icomoon.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.button.less" />
         <option value="$PROJECT_DIR$/tests/docs/about/accessibility.html" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.slider.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.controlgroup.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.fieldcontain.less" />
-        <option value="$PROJECT_DIR$/less/structure/mixins.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.forms.textinput.less" />
-        <option value="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" />
         <option value="$PROJECT_DIR$/less/structure/variables.less" />
         <option value="$PROJECT_DIR$/less/structure/jquery.mobile.collapsible.less" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.structure.just.less" />
+        <option value="$PROJECT_DIR$/less/structure/mixins.less" />
+        <option value="$PROJECT_DIR$/tests/starter-blank.html" />
+        <option value="$PROJECT_DIR$/tests/docs/pages/multipage-template.html" />
+        <option value="H:/Downloads/uTorrent/Completed Downloads/learnable - iOS Programming 2/ios-part-2.html" />
+        <option value="$PROJECT_DIR$/tests/docs/pages/multipage-template (1).html" />
+        <option value="$PROJECT_DIR$/less/structure/jquery.mobile.core.less" />
+        <option value="$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less" />
       </list>
     </option>
   </component>
@@ -200,6 +209,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,38 +300,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-mobile-less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icomoon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editing.templates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jquery-mobile" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -390,16 +377,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.060298827" sideWeight="0.6703911" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.246875" sideWeight="0.67065215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -466,85 +453,80 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/less/structure/icomoon/icomoon.css">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.slider.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="125" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.6172695" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/icomoon/defs.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="7371" vertical-scroll-proportion="-0.0" />
+        <state line="181" column="5" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.button.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="22" selection-start="4399" selection-end="4399" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="232" selection-end="249" vertical-scroll-proportion="0.0">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/docs/about/accessibility.html">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.just.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="31" selection-start="370" selection-end="370" vertical-scroll-proportion="0.27058825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.structure.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
+        <state line="9" column="30" selection-start="0" selection-end="1219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/icomoon/icomoon.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.checkboxradio.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1818" column="10" selection-start="22194" selection-end="22198" vertical-scroll-proportion="0.0">
+        <state line="30" column="1" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.textinput.less">
+    <entry file="file://$PROJECT_DIR$/tests/starter-blank.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="17" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="66" column="14" selection-start="2442" selection-end="2442" vertical-scroll-proportion="1.9619501" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/structure/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="11" selection-start="3488" selection-end="3498" vertical-scroll-proportion="-5.96">
+        <state line="490" column="122" selection-start="14201" selection-end="14201" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.controlgroup.less">
+    <entry file="file://$PROJECT_DIR$/tests/docs/pages/multipage-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="30" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+        <state line="7" column="4" selection-start="168" selection-end="267" vertical-scroll-proportion="-2.0833333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/css/jquery.mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="468" column="10" selection-start="53596" selection-end="53596" vertical-scroll-proportion="0.37745973" />
+      </provider>
+    </entry>
+    <entry file="file://H:/Downloads/uTorrent/Completed Downloads/learnable - iOS Programming 2/ios-part-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="7" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-3.6764705">
+          <folding>
+            <marker date="1352441670554" expanded="true" signature="385:434" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/docs/pages/multipage-template (1).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-8.088235">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.forms.slider.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.button.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="5" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.0">
+        <state line="19" column="23" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -556,16 +538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/structure/variables.less">
+    <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.core.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="143" selection-end="143" vertical-scroll-proportion="-5.52">
+        <state line="227" column="20" selection-start="3650" selection-end="3655" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/structure/jquery.mobile.collapsible.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="23" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.4990991">
+        <state line="88" column="4" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/themes/default/jquery.mobile.theme.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="27" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.65265083">
           <folding />
         </state>
       </provider>
