@@ -1,4 +1,4 @@
-# jQuery Mobile LESS Version
+# jQuery Mobile LESS Version 1.3.0
 
 This is a version of the jQuery Mobile project, converted to LESS. From the [official website]
 (http://jquerymobile

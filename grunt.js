@@ -165,6 +165,26 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		//LESS configuration
+		less: {
+			development: {
+				options: {
+					paths: ["css"]
+				},
+				files: {
+					"css/jquery.mobile.css": "less/themes/default/jquery.mobile.less"
+				}
+			},
+			production: {
+				options: {
+					paths: ["css"],
+					yuicompress: true
+				},
+				files: {
+					"css/jquery.mobile.css": "less/themes/default/jquery.mobile.less"
+				}
+			}
+		},
 		global: {
 			dirs: dirs,
 
@@ -207,6 +227,9 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-git-authors" );
 
 	grunt.loadNpmTasks( "grunt-junit" );
+
+	//enable less compilation
+	grunt.loadNpmTasks("grunt-contrib-less");
 
 	// A convenient task alias.
 	grunt.registerTask('test', 'config:test:pages config:test junit');
