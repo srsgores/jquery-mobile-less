@@ -1,3 +1,5 @@
+@formsFieldContain: true;
+
 .ui-field-contain {
 	max-width: 100%;
 	fieldset.ui-field-contain {
@@ -8,14 +10,5 @@
 	}
 	&:last-child {
 		border-bottom-width: 0;
-	}
-}
-
-/* This prevents horizontal scrollbar in IE7 */
-@media all and (min-width: 450px) {
-	.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
-		border-width: 0;
-		padding: 1em;
-		margin: 1em 0;
 	}
 }

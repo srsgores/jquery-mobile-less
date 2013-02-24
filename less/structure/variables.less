@@ -1,19 +1,134 @@
 //
 // Variables
 // --------------------------------------------------
-@border-radius: 0.4em;
-@padding: 1em;
-@margin: 1em;
-@transition-time: 1s;
+/* Multipliers: Use to scale sizes as desired */
+
+@multiplier: 1.3;
+@multiplierLarge: @multiplier * 2.1;
+@multiplierSmall: @multiplier / @multiplierLarge;
+
+@multiplierLargePercentage: @multiplierLarge * 10%;
+
+/*Type*/
+@baseFontSize: 16px;
+@baseFontFamily: "Open Sans", "sans-serif", "arial";
+@fontSizeSmall: 85%;
+@fontSizeMedium: 90%;
+@fontSizeLarge: 125%;
+@fontSizeMini: 75%;
+@baseLineHeight: 1.4;
+@em: 1em;
+@line: @em * @baseLineHeight;
+@baseFontWeight: 500;
+
+@sansFontFamily: "Open Sans", Helvetica, Arial, sans-serif;
+@serifFontFamily: Georgia, "Times New Roman", Times, serif;
+@monoFontFamily: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+
+@baseFontFamily: @sansFontFamily;
+@altFontFamily: @serifFontFamily;
+
+@headingsFontFamily: inherit;
+@headingsFontWeight: 300;
+@headingsColour: inherit;
+
+/*Grid*/
+@num-cols: 12;
+@rowWidth: 100%;
+@container-lateral-padding: @em;
+@col-margin-right: 3.8%;
+@col-unit: (@rowWidth + @col-margin-right) / @num-cols;
+@col-identifier: "ui-block-";
+
+@col-name-1: "A";
+@col-name-2: "B";
+@col-name-3: "C";
+@col-name-4: "D";
+@col-name-5: "E";
+@col-name-6: "F";
+@col-name-7: "G";
+@col-name-8: "H";
+@col-name-9: "I";
+@col-name-10: "J";
+@col-name-11: "K";
+@col-name-12: "L";
+@col-name-13: "M";
+@col-name-14: "N";
+@col-name-15: "O";
+@col-name-16: "P";
+@col-name-17: "Q";
+@col-name-18: "R";
+@col-name-19: "S";
+@col-name-20: "T";
+@col-name-21: "U";
+@col-name-22: "V";
+@col-name-23: "W";
+@col-name-24: "X";
+
+@column-selector-number-at-end: true;
+
+/* Basic measurements */
+
+@padding: @em;
+@paddingLarge: @padding * @multiplier;
+@paddingSmall: @padding / @multiplier;
+@paddingMini: @padding / @multiplierLarge;
+
+@margin: @em;
+@marginLarge: @margin * @multiplier;
+
+@paddingPercentage: 6%;
+@paddingSmallPercentage: 1.6%;
+@paddingMiniPercentage: 0.3%;
+
+
+@borderRadius: (@margin / @multiplierLarge);
+@borderRadiusSmall: @borderRadius * 0.75;
+@borderRadiusLarge: @borderRadius * 1.25;
+
+/* Transitions*/
+@transitionTime: 0.5s;
+
+/* =============================================================================
+Colours
+========================================================================== */
+@textColour: #000;
+@primaryColour: @textColour;
+//colour of text and main colour overall
+@secondaryColour: #DDD;
+@tertiaryColour: #CCC;
+@codeColour: lighten(@textColour, 60%);
+//background colour.  Should be the opposite of primary colour for good results
+@bodyBackgroundImage: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_dots.png");
+@bodyBackgroundColour: spin(@textColour, 180); //inverse of text coliour
+
+/* =============================================================================
+CSS3 PIE settings
+========================================================================== */
+@pie: true; //enable support for IE6-8 via CSS3 PIE?
+@pieDirectory: "PIE.htc";
+
+/* =============================================================================
+shadow
+========================================================================== */
+@shadow: 0 0 @marginLarge @textColour;
+
+/* Transitions */
+@transition-time: 0.5s;
+
 /* =============================================================================
 Buttons
 ========================================================================== */
-@buttonPadding: 0.5em;
-@buttonMargin: 0.2em;
+@buttonPrimaryColour: darken(@primaryColour, 40%);
+@buttonSecondaryColour: lighten(@buttonPrimaryColour, @multiplierLargePercentage);
 
-@buttonMiniPadding: @buttonMargin / 2;
-@buttonMiniMargin: @buttonMargin / 2;
-
+/* =============================================================================
+Borders
+========================================================================== */
+@borderStyle: 1px solid;
+@borderColour: lighten(@textColour, 40%);
+@border: @borderStyle @borderColour;
 
 // Grays
 // -------------------------
@@ -25,7 +140,7 @@ Buttons
 @grayLighter: #eee;
 @white: #fff;
 
-// Accent colors
+// Accent colours
 // -------------------------
 @blue: #049cdb;
 @blueDark: #0064cd;
@@ -38,36 +153,18 @@ Buttons
 
 // Scaffolding
 // -------------------------
-@bodyBackground: @white;
-@textColor: @grayDark;
+@textColour: @black;
 
 // Links
 // -------------------------
-@linkColor: #08c;
-@linkColorHover: darken(@linkColor, 15%);
-
-// Typography
-// -------------------------
-@sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily: Georgia, "Times New Roman", Times, serif;
-@monoFontFamily: Monaco, Menlo, Consolas, "Courier New", monospace;
-
-@baseFontSize: 16px;
-@baseFontFamily: @sansFontFamily;
-@baseLineHeight: 1em;
-@altFontFamily: @serifFontFamily;
-
-@headingsFontFamily: inherit;
-// empty to use BS default, @baseFontFamily
-@headingsFontWeight: bold;
-// instead of browser default, bold
-@headingsColor: inherit;
-// empty to use BS default, @textColor
+@linkColour: spin(lighten(@primaryColour, 50%), 100);
+@linkColourHover: darken(@linkColour, 15%);
+@linkColourVisited: spin(@linkColourHover, 10);
 
 // Tables
 // -------------------------
 @tableBackground: transparent;
-// overall background-color
+// overall background-colour
 @tableBackgroundAccent: #f9f9f9;
 // for striping
 @tableBackgroundHover: #f5f5f5;
@@ -77,155 +174,12 @@ Buttons
 
 // Buttons
 // -------------------------
-@btnBackground: @white;
-@btnBackgroundHighlight: darken(@white, 10%);
-@btnBorder: #bbb;
-
-@btnPrimaryBackground: @linkColor;
-@btnPrimaryBackgroundHighlight: spin(@btnPrimaryBackground, 20%);
-
-@btnInfoBackground: #5bc0de;
-@btnInfoBackgroundHighlight: #2f96b4;
-
-@btnSuccessBackground: #62c462;
-@btnSuccessBackgroundHighlight: #51a351;
-
-@btnWarningBackground: lighten(@orange, 15%);
-@btnWarningBackgroundHighlight: @orange;
-
-@btnDangerBackground: #ee5f5b;
-@btnDangerBackgroundHighlight: #bd362f;
-
-@btnInverseBackground: #444;
-@btnInverseBackgroundHighlight: @grayDarker;
 
 // Forms
 // -------------------------
-@inputBackground: rgba(39, 39, 39, 0.74);
-@inputBorder: #313131;
-@inputBorderRadius: 0.4em;
+@inputBackground: @white;
+@inputBorder: #ccc;
+@inputBorderRadius: @borderRadius;
 @inputDisabledBackground: @grayLighter;
-@formActionsBackground: rgba(41, 41, 41, 0.87);
-
-// Dropdowns
-// -------------------------
-@dropdownBackground: @white;
-@dropdownBorder: rgba(0, 0, 0, .2);
-@dropdownDividerTop: #e5e5e5;
-@dropdownDividerBottom: @white;
-
-@dropdownLinkColor: @grayDark;
-
-@dropdownLinkColorHover: @white;
-@dropdownLinkBackgroundHover: @dropdownLinkBackgroundActive;
-
-@dropdownLinkColorActive: @dropdownLinkColor;
-@dropdownLinkBackgroundActive: @linkColor;
-
-// COMPONENT VARIABLES
-// --------------------------------------------------
-
-// Z-index master list
-// -------------------------
-// Used for a bird's eye view of components dependent on the z-axis
-// Try to avoid customizing these :)
-@zindexDropdown: 1000;
-@zindexPopover: 1010;
-@zindexTooltip: 1030;
-@zindexFixedNavbar: 1030;
-@zindexModalBackdrop: 1040;
-@zindexModal: 1050;
-
-// Sprite icons path
-// -------------------------
-@iconSpritePath: "../img/glyphicons-halflings.png";
-@iconWhiteSpritePath: "../img/glyphicons-halflings-white.png";
-
-// Input placeholder text color
-// -------------------------
-@placeholderText: @grayLight;
-
-// Hr border color
-// -------------------------
-@hrBorder: @grayLighter;
-
-// Wells
-// -------------------------
-@wellBackground: #f5f5f5;
-
-// Navbar
-// -------------------------
-@navbarCollapseWidth: 979px;
-
-@navbarHeight: 40px;
-@navbarBackground: darken(@navbarBackgroundHighlight, 5%);
-@navbarBackgroundHighlight: #ffffff;
-@navbarBorder: darken(@navbarBackground, 12%);
-
-@navbarText: @gray;
-@navbarLinkColor: @gray;
-@navbarLinkColorHover: @grayDark;
-@navbarLinkColorActive: @gray;
-@navbarLinkBackgroundHover: transparent;
-@navbarLinkBackgroundActive: darken(@navbarBackground, 5%);
-
-@navbarBrandColor: @navbarLinkColor;
-
-// Inverted navbar
-@navbarInverseBackground: #111111;
-@navbarInverseBackgroundHighlight: #222222;
-@navbarInverseBorder: #252525;
-
-@navbarInverseText: @grayLight;
-@navbarInverseLinkColor: @grayLight;
-@navbarInverseLinkColorHover: @white;
-@navbarInverseLinkColorActive: @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover: transparent;
-@navbarInverseLinkBackgroundActive: @navbarInverseBackground;
-
-@navbarInverseSearchBackground: lighten(@navbarInverseBackground, 25%);
-@navbarInverseSearchBackgroundFocus: @white;
-@navbarInverseSearchBorder: @navbarInverseBackground;
-@navbarInverseSearchPlaceholderColor: #ccc;
-
-@navbarInverseBrandColor: @navbarInverseLinkColor;
-
-// Pagination
-// -------------------------
-@paginationBackground: #fff;
-@paginationBorder: #ddd;
-@paginationActiveBackground: #f5f5f5;
-
-// Form states and alerts
-// -------------------------
-@warningText: #c09853;
-@warningBackground: #fcf8e3;
-@warningBorder: darken(spin(@warningBackground, -10), 3%);
-
-@errorText: #b94a48;
-@errorBackground: #f2dede;
-@errorBorder: darken(spin(@errorBackground, -10), 3%);
-
-@successText: #468847;
-@successBackground: #dff0d8;
-@successBorder: darken(spin(@successBackground, -10), 5%);
-
-@infoText: #3a87ad;
-@infoBackground: #d9edf7;
-@infoBorder: darken(spin(@infoBackground, -10), 7%);
-
-// Tooltips and popovers
-// -------------------------
-@tooltipColor: #fff;
-@tooltipBackground: #000;
-@tooltipArrowWidth: 5px;
-@tooltipArrowColor: @tooltipBackground;
-
-@popoverBackground: #fff;
-@popoverArrowWidth: 10px;
-@popoverArrowColor: #fff;
-@popoverTitleBackground: darken(@popoverBackground, 3%);
-
-// Special enhancement for popovers
-@popoverArrowOuterWidth: @popoverArrowWidth + 1;
-@popoverArrowOuterColor: rgba(0, 0, 0, .25);
+@formActionsBackground: #f5f5f5;
+@inputHeight: @baseLineHeight + @paddingSmall;
