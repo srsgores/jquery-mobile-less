@@ -10,8 +10,7 @@
 		top: -9999px;
 	}
 	.ui-btn {
-		overflow: hidden;
-		.opacity(100);
+		opacity: 1;
 		select {
 			cursor: pointer;
 			-webkit-appearance: none;
@@ -22,12 +21,13 @@
 			min-height: 100%;
 			height: 3em;
 			max-height: 100%;
-			.opacity(0);
+			filter: Alpha(Opacity = 0);
+			opacity: 0;
 			z-index: 2;
 		}
 	}
 	.ui-disabled {
-		.opacity(30);
+		opacity: .3;
 		select {
 			display: none;
 		}
@@ -36,13 +36,13 @@
 		border-radius: 0;
 		border: 0;
 		select {
-			.opacity(100);
+			opacity: 1;
 			text-indent: 0;
 			display: block;
 		}
 	}
 	.ui-disabled.ui-select-nativeonly .ui-btn-inner {
-		.opacity(0);
+		opacity: 0;
 	}
 	.ui-mini.ui-btn-icon-right .ui-btn-inner {
 		padding-right: 32px;
@@ -78,7 +78,7 @@
 }
 
 label.ui-select {
-	font-size: @baseFontSize;
+	font-size: 16px;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 .3em;
@@ -112,11 +112,6 @@ label.ui-select {
 	}
 }
 
-.ui-selectmenu-hidden {
-	top: -99999px;
-	left: -9999px;
-}
-
 .ui-screen-hidden {
 	display: none;
 }
@@ -130,7 +125,14 @@ label.ui-select {
 	display: none;
 }
 
-@media all and (min-width: 450px) {
+.ui-selectmenu.ui-popup .ui-header {
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+@media all and (min-width: 28em) {
 	.ui-field-contain label.ui-select {
 		vertical-align: top;
 		display: inline-block;
@@ -147,3 +149,5 @@ label.ui-select {
 		width: 100%;
 	}
 }
+
+@-moz-document url-prefix() { .ui-select .ui-btn select { opacity: 0.0001; }}

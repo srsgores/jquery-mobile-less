@@ -6,14 +6,8 @@
 }
 
 .ui-checkbox .ui-btn, .ui-radio .ui-btn {
-	margin-top: .5em;
-	margin-bottom: .5em;
 	text-align: left;
 	z-index: 2;
-}
-
-.ui-checkbox .ui-btn.ui-mini, .ui-radio .ui-btn.ui-mini {
-	margin: .25em 0;
 }
 
 .ui-controlgroup {
@@ -45,13 +39,13 @@
 .ui-checkbox .ui-btn-icon-top .ui-btn-inner, .ui-radio .ui-btn-icon-top .ui-btn-inner {
 	padding-right: 0;
 	padding-left: 0;
-	.centred;
+	text-align: center;
 }
 
 .ui-checkbox .ui-btn-icon-bottom .ui-btn-inner, .ui-radio .ui-btn-icon-bottom .ui-btn-inner {
 	padding-right: 0;
 	padding-left: 0;
-	.centred;
+	text-align: center;
 }
 
 .ui-checkbox .ui-icon, .ui-radio .ui-icon {
@@ -83,6 +77,18 @@
 .ui-checkbox .ui-btn-icon-bottom .ui-icon, .ui-radio .ui-btn-icon-bottom .ui-icon {
 	top: auto;
 	bottom: 10px;
+}
+
+.ui-controlgroup-horizontal {
+	.ui-checkbox .ui-icon, .ui-radio .ui-icon {
+		display: none;
+	}
+	.ui-checkbox .ui-btn-inner, .ui-radio .ui-btn-inner {
+		padding: .6em 20px;
+	}
+	.ui-checkbox .ui-mini .ui-btn-inner, .ui-radio .ui-mini .ui-btn-inner {
+		padding: .55em 11px .5em;
+	}
 }
 
 .ui-checkbox input, .ui-radio input {

@@ -1,0 +1,119 @@
+/*------------------------------------------------------------------------------------------------------------------------
+	Author: Sean Goresht
+	www: http://seangoresht.com/
+	github: https://github.com/srsgores
+	twitter: http://twitter.com/S.Goresht
+
+	Licensed under the GNU Public License
+
+	=============================================================================
+	Filename:  loaders
+	=============================================================================
+	This file contains css3 loaders for ajax.
+--------------------------------------------------------------------------------------------------------------------- */
+
+/* =============================================================================
+CSS loaders
+========================================================================== */
+
+#ajaxloader1, #ajaxloader2, #ajaxloader3, #ajaxloader4
+{
+	width: 30px;
+	height: 30px;
+	margin: 20px auto;
+	border: 8px solid #0a0a0a;
+	border-right-color: transparent;
+	.border-radius(50%);
+	box-shadow: 0 0 25px 2px #eee;
+	-webkit-animation: spin 1s linear infinite;
+	-moz-animation: spin 1s linear infinite;
+	-ms-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#ajaxloader1::after {
+	content: 'Loading...';
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+#ajaxloader2
+{
+	border-right: 0 none;
+}
+
+#ajaxloader3
+{
+	border-left-color: transparent;
+}
+
+#ajaxloader4
+{
+	border-bottom-color: transparent;
+}
+
+#ajaxloader3::after, #ajaxloader4::after
+{
+	display: block;
+	content: " ";
+	width: 9px;
+	height: 9px;
+	border: 6px solid #fff;
+	margin: 4px;
+	.border-radius(50%);
+}
+
+#ajaxloader3::after
+{
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+#ajaxloader4::after
+{
+	width: 13px;
+	height: 13px;
+	margin: 1px;
+	border-width: 8px;
+	border-top-color: transparent;
+	border-left-color: transparent;
+}
+
+@-webkit-keyframes spin
+{
+	from { -webkit-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -webkit-transform: rotate(180deg); opacity: 1; }
+	to   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@-moz-keyframes spin
+{
+	from { -moz-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -moz-transform: rotate(180deg); opacity: 1; }
+	to   { -moz-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@-ms-keyframes spin
+               {
+	               from { -ms-transform: rotate(0deg); opacity: 0.4; }
+50%  { -ms-transform: rotate(180deg); opacity: 1; }
+to   { -ms-transform: rotate(360deg); opacity: 0.4; }
+	}
+
+@-o-keyframes spin
+{
+	from { -o-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -o-transform: rotate(180deg); opacity: 1; }
+	to   { -o-transform: rotate(360deg); opacity: 0.4; }
+}
+
+@keyframes spin
+{
+	from { transform: rotate(0deg); opacity: 0.2; }
+	50%  { transform: rotate(180deg); opacity: 1; }
+	to   { transform: rotate(360deg); opacity: 0.2; }
+}

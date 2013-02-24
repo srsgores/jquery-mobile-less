@@ -1,0 +1,164 @@
+//
+// Variables
+// --------------------------------------------------
+/* Multipliers: Use to scale sizes as desired */
+
+@multiplier: 1.3;
+@multiplierLarge: @multiplier * 2.1;
+@multiplierSmall: @multiplier / @multiplierLarge;
+
+@multiplierPercentage: @multiplier * 10%;
+
+/*Type*/
+@baseFontSize: 16px;
+@sansFontFamily: "Open Sans", Helvetica, Arial, sans-serif;
+@serifFontFamily: Georgia, "Times New Roman", Times, serif;
+@monoFontFamily: Monaco, Menlo, Consolas, "Courier New", monospace;
+@baseFontFamily: @sansFontFamily;
+@fontSizeSmall: 85%;
+@fontSizeMedium: 90%;
+@fontSizeLarge: 125%;
+@fontSizeMini: 75%;
+@baseLineHeight: 1.4;
+@em: 1em;
+@line: @em * @baseLineHeight;
+@baseFontWeight: 500;
+
+
+@altFontFamily: @serifFontFamily;
+
+@headingsFontFamily: @sansFontFamily;
+@headingsFontWeight: 300;
+@headingsColour: inherit;
+
+/*Grid*/
+//@num-cols: 12;
+@rowWidth: 100%;
+@container-lateral-padding: @em;
+//@col-margin-right: 3.8%;
+@col-unit: (@rowWidth + @col-margin-right) / @num-cols;
+@col-identifier: "col";
+
+@col-name-1: "one";
+@col-name-2: "two";
+@col-name-3: "three";
+@col-name-4: "four";
+@col-name-5: "five";
+@col-name-6: "six";
+@col-name-7: "seven";
+@col-name-8: "eight";
+@col-name-9: "nine";
+@col-name-10: "ten";
+@col-name-11: "eleven";
+@col-name-12: "twelve";
+@col-name-13: "thirteen";
+@col-name-14: "fourteen";
+@col-name-15: "fifteen";
+@col-name-16: "sixteen";
+@col-name-17: "seventeen";
+@col-name-18: "eighteen";
+@col-name-19: "nineteen";
+@col-name-20: "twenty";
+@col-name-21: "twentyone";
+@col-name-22: "twentytwo";
+@col-name-23: "twentythree";
+@col-name-24: "twentyfour";
+
+@col-identifier-names: true;
+
+@column-selector-number-at-end: false;
+
+/* Basic measurements */
+
+@padding: @em;
+@paddingLarge: @padding * @multiplier;
+@paddingSmall: @padding / @multiplier;
+@paddingMini: @padding / @multiplierLarge;
+
+@margin: @em;
+@marginLarge: @margin * @multiplier;
+
+@paddingPercentage: 6%;
+@paddingSmallPercentage: 1.6%;
+@paddingMiniPercentage: 0.3%;
+
+
+@borderRadius: (@margin / @multiplierLarge);
+@borderRadiusSmall: @borderRadius * 0.75;
+@borderRadiusLarge: @borderRadius * 1.25;
+
+/* Transitions*/
+@transitionTime: 0.5s;
+
+/* =============================================================================
+Colours
+========================================================================== */
+@textColour: #000;
+@primaryColour: @textColour;
+colour of text and main colour overall
+@secondaryColour: #6F6F6F;
+@tertiaryColour: #D6D6D6;
+@codeColour: lighten(@textColour, 60%);
+background colour.  Should be the opposite of primary colour for good results
+@bodyBackgroundImage: url("../img/pw_maze_white.png");
+@bodyBackgroundColour: spin(@textColour, 180); //inverse of text coliour
+@moduleBackground: fade(@secondaryColour, 90%);
+@bodyWidth: 1140px;
+/* =============================================================================
+CSS3 PIE settings
+========================================================================== */
+@pie: true; //enable support for IE6-8 via CSS3 PIE?
+@pieDirectory: "PIE.htc";
+
+/* =============================================================================
+shadow
+========================================================================== */
+@shadow: 0 0 @marginLarge @textColour;
+
+/* Transitions */
+@transition-time: 0.5s;
+
+/* =============================================================================
+Buttons
+========================================================================== */
+@buttonPrimaryColour: darken(@primaryColour, 40%);
+@buttonSecondaryColour: lighten(@buttonPrimaryColour, @multiplierLargePercentage);
+
+/* =============================================================================
+Borders
+========================================================================== */
+@borderStyle: solid;
+@borderWidth: 1px;
+@borderColour: #c7c7c7;
+@border: @borderWidth @borderStyle @borderColour;
+
+// Grays
+// -------------------------
+@black: #000;
+@grayDarker: #222;
+@grayDark: #333;
+@gray: #555;
+@grayLight: #999;
+@grayLighter: #eee;
+@white: #fff;
+
+// Accent colours
+// -------------------------
+@blue: #049cdb;
+@blueDark: #0064cd;
+@green: #46a546;
+@red: #9d261d;
+@yellow: #ffc40d;
+@orange: #f89406;
+@pink: #c3325f;
+@purple: #7a43b6;
+
+// Scaffolding
+// -------------------------
+
+// Links
+// -------------------------
+@linkColour: spin(lighten(@primaryColour, 50%), 100);
+@linkColourHover: darken(@linkColour, 15%);
+@linkColourVisited: spin(@linkColourHover, 10);
+

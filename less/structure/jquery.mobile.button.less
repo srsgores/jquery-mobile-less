@@ -1,9 +1,9 @@
 .ui-btn {
 	display: block;
-	.centred;
+	text-align: center;
 	cursor: pointer;
 	position: relative;
-	margin: @buttonMargin 0;
+	margin: .5em 0;
 	padding: 0;
 	input, button {
 		z-index: 2;
@@ -11,24 +11,24 @@
 }
 
 .ui-mini {
-	margin-top: @buttonMiniMargin;
-	margin-bottom: @buttonMiniMargin;
+	margin-top: .25em;
+	margin-bottom: .25em;
 }
 
 .ui-btn-left, .ui-btn-right, .ui-btn-inline {
-	margin-right: @buttonMargin;
-	margin-left: @buttonMargin;
+	margin-right: 5px;
+	margin-left: 5px;
 	display: inline-block;
 	vertical-align: middle;
 }
 
 .ui-input-clear, .ui-grid-a .ui-btn, .ui-grid-b .ui-btn, .ui-grid-c .ui-btn, .ui-grid-d .ui-btn, .ui-grid-e .ui-btn, .ui-grid-solo .ui-btn {
-	margin-right: @buttonMargin;
-	margin-left: @buttonMargin;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 .ui-btn-inner {
-	font-size: @baseFontSize;
+	font-size: 16px;
 	padding: .6em 20px;
 	min-width: .75em;
 	display: block;
@@ -37,12 +37,12 @@
 	overflow: hidden;
 	white-space: nowrap;
 	zoom: 1;
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
 }
 
-.ui-mobile {
-	.ui-btn-left, .ui-btn-right {
-		margin: 0;
-	}
+.ui-mobile .ui-btn-left, .ui-mobile .ui-btn-right, .ui-btn-left > .ui-btn, .ui-btn-right > .ui-btn {
+	margin: 0;
 }
 
 .ui-btn-block {
@@ -64,9 +64,15 @@
 }
 
 .ui-fullsize .ui-btn-inner {
-	font-size: @baseFontSize;
-	padding: .6em 20px;
+
+,
+{
+	font-size: 16px
+;
+	padding: .6em 20px
+;
 }
+	}
 
 .ui-btn-icon-notext {
 	width: 24px;
@@ -96,6 +102,12 @@
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	-webkit-border-radius: inherit;
+	border-radius: inherit;
+}
+
+div.ui-btn-text {
+	width: auto;
 }
 
 .ui-btn-icon-left .ui-btn-inner {
@@ -168,19 +180,19 @@
 }
 
 .ui-header .ui-btn-icon-left .ui-icon, .ui-footer .ui-btn-icon-left .ui-icon, .ui-mini.ui-btn-icon-left .ui-icon, .ui-mini .ui-btn-icon-left .ui-icon {
-	left: @buttonMargin;
+	left: 5px;
 }
 
 .ui-header .ui-btn-icon-right .ui-icon, .ui-footer .ui-btn-icon-right .ui-icon, .ui-mini.ui-btn-icon-right .ui-icon, .ui-mini .ui-btn-icon-right .ui-icon {
-	right: @buttonMargin;
+	right: 5px;
 }
 
 .ui-header .ui-btn-icon-top .ui-icon, .ui-footer .ui-btn-icon-top .ui-icon, .ui-mini.ui-btn-icon-top .ui-icon, .ui-mini .ui-btn-icon-top .ui-icon {
-	top: @buttonMargin;
+	top: 5px;
 }
 
 .ui-header .ui-btn-icon-bottom .ui-icon, .ui-footer .ui-btn-icon-bottom .ui-icon, .ui-mini.ui-btn-icon-bottom .ui-icon, .ui-mini .ui-btn-icon-bottom .ui-icon {
-	bottom: @buttonMargin;
+	bottom: 5px;
 }
 
 .ui-btn-hidden {
@@ -193,7 +205,7 @@
 	cursor: pointer;
 	background: #ffffff;
 	background: rgba(255, 255, 255, 0);
-	filter: Alpha(Opacity=0);
+	filter: Alpha(Opacity = 0);
 	opacity: .1;
 	font-size: 1px;
 	border: none;
@@ -209,11 +221,10 @@
 
 .ui-field-contain .ui-btn.ui-submit {
 	margin: 0;
-	overflow: visible;
 }
 
 label.ui-submit {
-	font-size: @baseFontSize;
+	font-size: 16px;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 .3em;

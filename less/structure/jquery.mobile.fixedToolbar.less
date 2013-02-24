@@ -9,16 +9,29 @@
 }
 
 .ui-header-fixed {
+	top: -1px;
+	padding-top: 1px;
+}
+
+.ui-header-fixed.ui-fixed-hidden {
 	top: 0;
+	padding-top: 0;
 }
 
 .ui-footer-fixed {
+	bottom: -1px;
+	padding-bottom: 1px;
+}
+
+.ui-footer-fixed.ui-fixed-hidden {
 	bottom: 0;
+	padding-bottom: 0;
 }
 
 .ui-header-fullscreen,
 .ui-footer-fullscreen {
-	.opacity(90);
+	filter: Alpha(Opacity = 90);
+	opacity: .9;
 }
 
 .ui-page-header-fixed {
@@ -29,8 +42,8 @@
 	padding-bottom: 2.6875em;
 }
 
-.ui-page-header-fullscreen .ui-content,
-.ui-page-footer-fullscreen .ui-content {
+.ui-page-header-fullscreen > .ui-content,
+.ui-page-footer-fullscreen > .ui-content {
 	padding: 0;
 }
 
@@ -46,4 +59,9 @@
 .ui-header-fixed .ui-btn,
 .ui-footer-fixed .ui-btn {
 	z-index: 10;
+}
+
+/* workarounds for other widgets */
+.ui-android-2x-fixed .ui-li-has-thumb {
+	-webkit-transform: translate3d(0, 0, 0);
 }
