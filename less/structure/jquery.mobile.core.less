@@ -73,7 +73,7 @@ div.ui-mobile-viewport {
 .ui-loader-verbose {
 	width: 200px;
 	.opacity(88);
-	box-shadow: 0 @borderWidth @borderWidth -1px #fff;
+	.box-shadow(0 @borderWidth @borderWidth -1px @bodyBackgroundColour);
 	height: auto;
 	margin-left: -110px;
 	margin-top: -43px;
@@ -94,7 +94,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-loader .ui-icon {
-	background-color: #000;
+	background-color: @textColour;
 	display: block;
 	margin: 0;
 	width: 44px;

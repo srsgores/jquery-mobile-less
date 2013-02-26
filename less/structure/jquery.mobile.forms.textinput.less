@@ -109,7 +109,7 @@ textarea.ui-mini {
 
 /* Resolves issue #5166: Added to support issue introduced in Firefox 15. We can likely remove this in the future. */
 input::-moz-placeholder, textarea::-moz-placeholder {
-	color: #aaa;
+	color: lighten(@textColour, 40%);
 }
 
 /* Resolves issue #5131: Width of textinput depends on its type, for Android 4.1 */

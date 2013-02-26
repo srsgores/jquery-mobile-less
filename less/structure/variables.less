@@ -100,13 +100,6 @@
 Colours
 ========================================================================== */
 @textColour: #000;
-@primaryColour: @textColour;
-//colour of text and main colour overall
-@secondaryColour: #DDD;
-@tertiaryColour: #CCC;
-@codeColour: lighten(@textColour, 60%);
-//background colour.  Should be the opposite of primary colour for good results
-@bodyBackgroundImage: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_dots.png");
 @bodyBackgroundColour: spin(@textColour, 180); //inverse of text coliour
 
 /* =============================================================================
@@ -126,16 +119,6 @@ shadow
 
 /* Transitions */
 @transition-time: 0.5s;
-/* =============================================================================
-Active state colours
-========================================================================== */
-@activeBackgroundColour: #387BBE;
-@activeBorderColour: darken(@activeBackgroundColour, 20%);
-@activeTextColour: spin(@textColour, 180);
-@activeTextShadowColour: darken(@activeBackgroundColour, 15%);
-/* =============================================================================
-Buttons
-========================================================================== */
 
 /* =============================================================================
 Borders
@@ -169,13 +152,6 @@ Borders
 
 // Links
 // -------------------------
-@linkColour: spin(lighten(@primaryColour, 50%), 100);
+@linkColour: spin(lighten(@textColour, 50%), 60);
 @linkColourHover: darken(@linkColour, 15%);
 @linkColourVisited: spin(@linkColourHover, 10);
-
-/* =============================================================================
-Icons
-========================================================================== */
-@iconColour: @textColour;
-@iconDiscColour: @textColour;
-@iconDiscOpacity: 40%;

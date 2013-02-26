@@ -1,9 +1,26 @@
 //
 // Variables
 // --------------------------------------------------
-
 //place any customized variables here (or modify in the other variables.less files to override defaults
 //These variables have been created from the themeroller variables: http://jquerymobile.com/themeroller/
+
+/* =============================================================================
+Global
+========================================================================== */
+
+/* Active state colours */
+
+@activeBackgroundColour: #387BBE;
+@activeBorderColour: darken(@activeBackgroundColour, 20%);
+@activeTextColour: spin(@textColour, 180);
+@activeTextShadowColour: darken(@activeBackgroundColour, 15%);
+
+/* =============================================================================
+Icons
+========================================================================== */
+@iconColour: @textColour;
+@iconDiscColour: @textColour;
+@iconDiscOpacity: 40;
 
 /* =============================================================================
 Header/Footer bar
@@ -15,6 +32,10 @@ Header/Footer bar
 @headerFooterBackgroundPosition: 100%;
 @headerFooterBorderColour: lighten(@textColour, 30%);
 
+/* =============================================================================
+Theme main colours
+========================================================================== */
+@primaryColour: @blueDark;
 /* =============================================================================
 Content Body
 ========================================================================== */
