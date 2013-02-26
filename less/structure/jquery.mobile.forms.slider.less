@@ -100,6 +100,7 @@ input.ui-input-text.ui-slider-input {
 	height: 28px;
 	margin: -@em 0 0 -@em;
 	outline: 0;
+	.border-radius(50%);
 }
 
 .ui-slider-switch .ui-btn.ui-slider-handle {
@@ -149,7 +150,7 @@ select.ui-slider-switch {
 }
 
 div.ui-slider-switch {
-	display: inline-block;
+	.inline-block();
 	height: 32px;
 	width: 5.8em;
 	margin: .5em 0;
@@ -179,8 +180,8 @@ div.ui-slider-switch.ui-mini {
 	margin: @borderWidth 0 0 -13px;
 	padding: 0;
 	.ui-btn-inner {
-		height: 30px;
-		width: 30px;
+		height: @paddingLarge;
+		width: @paddingLarge;
 		padding: 0;
 		margin: 0;
 		border-top: none;
@@ -199,12 +200,12 @@ div.ui-slider-switch.ui-mini {
 @media all and (min-width: 28em){
 	.ui-field-contain label.ui-slider {
 		vertical-align: top;
-		display: inline-block;
+		.inline-block();
 		width: 20%;
 		margin: 0 2% 0 0;
 	}
 	.ui-field-contain div.ui-slider {
-		display: inline-block;
+		.inline-block();
 		width: 78%;
 	}
 	.ui-field-contain.ui-hide-label div.ui-slider {
@@ -213,7 +214,7 @@ div.ui-slider-switch.ui-mini {
 	}
 	.ui-field-contain div.ui-slider-switch,
 	.ui-field-contain.ui-hide-label div.ui-slider-switch {
-		display: inline-block;
+		.inline-block();
 		width: 5.8em;
 	}
 	.ui-field-contain div.ui-slider-switch.ui-mini {

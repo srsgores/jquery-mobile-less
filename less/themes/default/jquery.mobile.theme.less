@@ -693,14 +693,15 @@ a.ui-link-inherit {
 .ui-icon {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	.border-radius(9px);
-	font-size: @baseFontSize; //.icon-;
+	.border-radius(@borderRadiusLarge);
+	font-size: @em; //.icon-;
+	color: @iconColour;
 }
 
 .ui-icon-searchfield:after {
 	background: #666666;
 	background: rgba(0, 0, 0, 0.4);
-	.border-radius(9px);
+	.border-radius(@borderRadiusLarge);
 	.just-icon(@icon-search);
 	.centred;
 	left: 7px;
