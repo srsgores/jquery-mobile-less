@@ -11,7 +11,7 @@ label.ui-input-text {
 input.ui-input-text, textarea.ui-input-text {
 	background-image: none;
 	padding: @borderRadius;
-	margin: .5em 0;
+	margin: @marginSmall 0;
 	min-height: 1.4em;
 	line-height: 1.4em;
 	font-size: @em;
@@ -36,13 +36,13 @@ div.ui-input-text input.ui-input-text, div.ui-input-text textarea.ui-input-text,
 }
 
 .ui-input-search, div.ui-input-text {
-	margin: .5em 0;
+	margin: @marginSmall 0;
 	background-image: none;
 	position: relative;
 }
 
 .ui-input-search {
-	padding: 0 30px;
+	padding: 0 @em * 2;
 }
 
 div.ui-input-text {
@@ -50,7 +50,7 @@ div.ui-input-text {
 }
 
 div.ui-input-has-clear {
-	padding: 0 30px 0 @borderRadius;
+	padding: 0 @paddingLarge 0 @borderRadius;
 }
 
 input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini,
@@ -82,12 +82,11 @@ textarea.ui-mini {
 
 .ui-icon-searchfield:after {
 	position: absolute;
-	left: 7px;
+	left: @fontSizeSmall;
 	top: 50%;
-	margin-top: -9px;
 	content: "";
-	width: 18px;
-	height: 18px;
+	width: 1.7em;
+	height: 1.7em;
 	.opacity(50);
 }
 
