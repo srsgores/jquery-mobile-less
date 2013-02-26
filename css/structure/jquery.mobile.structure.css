@@ -14,10 +14,16 @@ shadow
 ========================================================================== */
 /* Transitions */
 /* =============================================================================
+Active state colours
+========================================================================== */
+/* =============================================================================
 Buttons
 ========================================================================== */
 /* =============================================================================
 Borders
+========================================================================== */
+/* =============================================================================
+Icons
 ========================================================================== */
 /*------------------------------------------------------------------------------------------------------------------------
 
@@ -4750,19 +4756,19 @@ div.ui-slider-switch.ui-mini {
 }
 .ui-panel-display-overlay {
   z-index: 1001;
-  -webkit-box-shadow: 0.3663003663003662em 0 0.3663003663003662em rgba(77, 77, 77, 0.15);
-  -moz-box-shadow: 0.3663003663003662em 0 0.3663003663003662em rgba(77, 77, 77, 0.15);
-  -khtml-box-shadow: 0.3663003663003662em 0 0.3663003663003662em rgba(77, 77, 77, 0.15);
-  -o-box-shadow: 0.3663003663003662em 0 0.3663003663003662em rgba(77, 77, 77, 0.15);
-  box-shadow: 0.3663003663003662em 0 0.3663003663003662em rgba(77, 77, 77, 0.15);
+  -webkit-box-shadow: 0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: 0.25em 0 0.25em rgba(0, 0, 0, 0.2);
 }
 .ui-panel-display-reveal {
   z-index: 0;
-  -webkit-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -khtml-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -o-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
 }
 .ui-panel-display-push {
   z-index: 999;
@@ -4851,11 +4857,11 @@ div.ui-slider-switch.ui-mini {
 }
 .ui-panel-position-right.ui-panel-display-reveal {
   right: 0;
-  -webkit-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -khtml-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -o-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -o-box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
 }
 .ui-panel-position-right.ui-panel-open {
   right: 0;
@@ -4930,11 +4936,11 @@ div.ui-slider-switch.ui-mini {
   overflow-x: hidden;
 }
 .ui-panel-position-right.ui-panel-display-overlay {
-  -webkit-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -khtml-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  -o-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
-  box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: inset -0.25em 0 0.25em rgba(0, 0, 0, 0.2);
 }
 .ui-panel-display-push.ui-panel-open.ui-panel-position-left {
   border-right-width: 1px;

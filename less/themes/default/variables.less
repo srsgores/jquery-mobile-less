@@ -3,3 +3,50 @@
 // --------------------------------------------------
 
 //place any customized variables here (or modify in the other variables.less files to override defaults
+//These variables have been created from the themeroller variables: http://jquerymobile.com/themeroller/
+
+/* =============================================================================
+Header/Footer bar
+========================================================================== */
+@headerFooterTextColour: lighten(@textColour, 20%);
+@headerFooterTextShadowColour: spin(@textColour, 180);
+@headerFooterTextShadow: 0 0 @headerFooterTextShadowColour;
+@headerFooterBackgroundColour: lighten(@textColour, 40%);
+@headerFooterBackgroundPosition: 100%;
+@headerFooterBorderColour: lighten(@textColour, 30%);
+
+/* =============================================================================
+Content Body
+========================================================================== */
+@contentBodyLinkColour: lighten(@primaryColour, 20%);
+@contentBodyTextColour: @textColour;
+@contentBodyTextShadow: 0 1px 0 @bodyBackgroundColour;
+@contentBodyBackgroundColour: darken(@bodyBackgroundColour, 15%);
+@contentBodyBorderColour: lighten(@textColour, 35%);
+
+/* =============================================================================
+Button States
+========================================================================== */
+/* normal */
+@buttonTextColour: lighten(@textColour, 20%);
+@buttonTextShadowColour: spin(@textColour, 180);
+@buttonTextShadow: 0 0 @headerFooterTextShadowColour;
+@buttonBackgroundColour: lighten(@textColour, 40%);
+@buttonBackgroundPosition: 100%;
+@buttonBorderColour: lighten(@textColour, 30%);
+
+/* hover */
+@buttonHoverTextColour: lighten(@textColour, 20%);
+@buttonHoverTextShadowColour: spin(@textColour, 180);
+@buttonHoverTextShadow: 0 0 @headerFooterTextShadowColour;
+@buttonHoverBackgroundColour: lighten(@buttonBackgroundColour, 10%);
+@buttonHoverBackgroundPosition: 100%;
+@buttonHoverBorderColour: lighten(@buttonBorderColour, 40%);
+
+/* active */
+@buttonActiveTextColour: lighten(@textColour, 20%);
+@buttonActiveTextShadowColour: spin(@textColour, 180);
+@buttonActiveTextShadow: 0 0 @headerFooterTextShadowColour;
+@buttonActiveBackgroundColour: lighten(@buttonHoverBackgroundColour, 15%);
+@buttonActiveBackgroundPosition: 100%;
+@buttonActiveBorderColour: @buttonHoverBorderColour;
