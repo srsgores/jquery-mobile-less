@@ -16,14 +16,14 @@
 		.ui-field-contain {
 			.ui-mobile fieldset.ui-field-contain {
 				border-width: 0;
-				padding: 1em;
-				margin: 1em 0;
+				padding: @padding;
+				margin: @margin 0;
 			}
 		}
 		.ui-field-contain,
 		.ui-field-contain .ui-select {
 			width: 78%;
-			display: inline-block;
+			.inline-block();
 		}
 
 		.ui-hide-label .ui-select {
@@ -33,7 +33,7 @@
 	.responsiveFormTextInput when (@formsTextInput = true) {
 		.ui-field-contain label.ui-input-text {
 			vertical-align: top;
-			display: inline-block;
+			.inline-block();
 			width: 20%;
 			margin: 0 2% 0 0
 		}
@@ -43,15 +43,12 @@
 		.ui-field-contain .ui-input-search,
 		.ui-field-contain div.ui-input-text {
 			width: 78%;
-			display: inline-block;
+			.inline-block();
 		}
 
 		.ui-field-contain .ui-input-search,
 		.ui-field-contain div.ui-input-text {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-ms-box-sizing: border-box;
-			box-sizing: border-box;
+			.border-box;
 		}
 
 		.ui-hide-label input.ui-input-text,

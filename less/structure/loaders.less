@@ -85,35 +85,35 @@ CSS loaders
 
 @-webkit-keyframes spin
 {
-	from { -webkit-transform: rotate(0deg); opacity: 0.4; }
-	50%  { -webkit-transform: rotate(180deg); opacity: 1; }
-	to   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+	from { -webkit-transform: rotate(0deg); .opacity(40); }
+	50%  { -webkit-transform: rotate(180deg); .opacity(100); }
+	to   { -webkit-transform: rotate(360deg); .opacity(40); }
 }
 
 @-moz-keyframes spin
 {
-	from { -moz-transform: rotate(0deg); opacity: 0.4; }
-	50%  { -moz-transform: rotate(180deg); opacity: 1; }
-	to   { -moz-transform: rotate(360deg); opacity: 0.4; }
+	from { -moz-transform: rotate(0deg); .opacity(40); }
+	50%  { -moz-transform: rotate(180deg); .opacity(100); }
+	to   { -moz-transform: rotate(360deg); .opacity(40); }
 }
 
 @-ms-keyframes spin
                {
-	               from { -ms-transform: rotate(0deg); opacity: 0.4; }
-50%  { -ms-transform: rotate(180deg); opacity: 1; }
-to   { -ms-transform: rotate(360deg); opacity: 0.4; }
+	               from { -ms-transform: rotate(0deg); .opacity(40) }
+50%  { -ms-transform: rotate(180deg); .opacity(100); }
+to   { -ms-transform: rotate(360deg); .opacity(40) }
 	}
 
 @-o-keyframes spin
 {
-	from { -o-transform: rotate(0deg); opacity: 0.4; }
-	50%  { -o-transform: rotate(180deg); opacity: 1; }
-	to   { -o-transform: rotate(360deg); opacity: 0.4; }
+	from { -o-transform: rotate(0deg); .opacity(40) }
+	50%  { -o-transform: rotate(180deg); .opacity(100); }
+	to   { -o-transform: rotate(360deg); .opacity(40) }
 }
 
 @keyframes spin
 {
-	from { transform: rotate(0deg); opacity: 0.2; }
-	50%  { transform: rotate(180deg); opacity: 1; }
-	to   { transform: rotate(360deg); opacity: 0.2; }
+	from { transform: rotate(0deg); .opacity(20) }
+	50%  { transform: rotate(180deg); .opacity(100); }
+	to   { transform: rotate(360deg); .opacity(20) }
 }

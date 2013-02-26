@@ -16,8 +16,7 @@
 .ui-mobile-viewport {
 	margin: 0;
 	overflow-x: visible;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: none;
+	.text-size-adjust(100%);
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -64,8 +63,7 @@ div.ui-mobile-viewport {
 
 .ui-loader-default {
 	background: none;
-	filter: Alpha(Opacity = 18);
-	opacity: .18;
+	.opacity(18);
 	width: 46px;
 	height: 46px;
 	margin-left: -23px;
@@ -74,8 +72,7 @@ div.ui-mobile-viewport {
 
 .ui-loader-verbose {
 	width: 200px;
-	filter: Alpha(Opacity = 88);
-	opacity: .88;
+	.opacity(88);
 	box-shadow: 0 1px 1px -1px #fff;
 	height: auto;
 	margin-left: -110px;
@@ -91,7 +88,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-loader-verbose h1 {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	margin: 0;
 	text-align: center;
 }
@@ -103,18 +100,16 @@ div.ui-mobile-viewport {
 	width: 44px;
 	height: 44px;
 	padding: 1px;
-	-webkit-border-radius: 36px;
-	border-radius: 36px;
+	.border-radius(@borderRadiusLarge)
 }
 
 .ui-loader-verbose .ui-icon {
 	margin: 0 auto 10px;
-	filter: Alpha(Opacity = 75);
-	opacity: .75;
+	.opacity(75);
 }
 
 .ui-loader-textonly {
-	padding: 15px;
+	padding: @baseFontSize;
 	margin-left: -115px;
 }
 
@@ -134,23 +129,23 @@ div.ui-mobile-viewport {
 /*headers, content panels*/
 .ui-bar {
 	position: relative;
-	padding: .4em 15px;
+	padding: @borderRadius @baseFontSize;
 	overflow: hidden;
 	display: block;
 	clear: both;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	margin: 0;
 	h1, h2, h3, h4, h5, h6 {
 		margin: 0;
 		padding: 0;
-		font-size: 16px;
-		display: inline-block;
+		font-size: @baseFontSize;
+		.inline-block();
 	}
 }
 
 .ui-body {
 	position: relative;
-	padding: .4em 15px;
+	padding: @borderRadius @baseFontSize;
 	overflow: hidden;
 	display: block;
 	clear: both;
@@ -183,12 +178,12 @@ div.ui-mobile-viewport {
 
 .ui-header .ui-btn-left,
 .ui-footer .ui-btn-left {
-	left: 5px;
+	left: @fontSizeMini;
 }
 
 .ui-header .ui-btn-right,
 .ui-footer .ui-btn-right {
-	right: 5px;
+	right: @fontSizeMini;
 }
 
 .ui-footer > .ui-btn-icon-notext,
@@ -204,9 +199,9 @@ div.ui-mobile-viewport {
 .ui-header .ui-title, .ui-footer .ui-title {
 	min-height: 1.1em;
 	text-align: center;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	display: block;
-	margin: .6em 30% .8em;
+	margin: @marginSmall 30% @marginSmall;
 	padding: 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -215,7 +210,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-footer .ui-title {
-	margin: .6em 15px .8em;
+	margin: @paddingSmall @baseFontSize @paddingSmall;
 }
 
 /* content area*/
@@ -223,32 +218,26 @@ div.ui-mobile-viewport {
 	border-width: 0;
 	overflow: visible;
 	overflow-x: hidden;
-	padding: 15px;
+	padding: @baseFontSize;
 }
 
 /* corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,
 .ui-corner-all > .ui-content:first-child,
 .ui-corner-all > .ui-footer:first-child {
-	-webkit-border-top-left-radius: inherit;
-	border-top-left-radius: inherit;
-	-webkit-border-top-right-radius: inherit;
-	border-top-right-radius: inherit;
+	.border-radius-top(inherit);
 }
 
 .ui-corner-all > .ui-header:last-child,
 .ui-corner-all > .ui-content:last-child,
 .ui-corner-all > .ui-footer:last-child {
-	-webkit-border-bottom-left-radius: inherit;
-	border-bottom-left-radius: inherit;
-	-webkit-border-bottom-right-radius: inherit;
-	border-bottom-right-radius: inherit;
+	.border-radius-bottom(inherit);
 }
 
 /* icons sizing */
 .ui-icon {
-	width: 18px;
-	height: 18px;
+	width: @baseFontSize;
+	height: @baseFontSize;
 }
 
 /* non-js content hiding */
@@ -259,7 +248,7 @@ div.ui-mobile-viewport {
 
 /* accessible content hiding */
 .ui-hide-label label.ui-input-text, .ui-hide-label label.ui-select, .ui-hide-label label.ui-slider, .ui-hide-label label.ui-submit, .ui-hide-label .ui-controlgroup-label,
-.ui-hidden-accessible {
+.ui-hidden-accessible, .visuallyhidden {
 	position: absolute !important;
 	left: -9999px;
 	clip: rect(1px 1px 1px 1px);

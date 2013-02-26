@@ -10,50 +10,48 @@
 @media only all {
 	.ui-table-reflow {
 		td, th {
-			text-align:left;
-			display:block;
+			text-align: left;
+			display: block;
 		}
 		td .ui-table-cell-label, th .ui-table-cell-label {
-			display:block;
-			display:inline-block;
-			padding:.4em;
-			min-width:30%;
-			margin:-.4em 1em -.4em -.4em;
+			display: block;
+			display: inline-block;
+			padding: @paddingSmall;
+			min-width: 30%;
+			margin: -@marginSmall @margin -@marginSmall -@marginSmall;
 		}
 		th .ui-table-cell-label-top, td .ui-table-cell-label-top {
-			display:block;
-			padding:.4em 0;
-			margin:.4em 0;
-			text-transform:uppercase;
-			font-size:.9em;
-			font-weight:normal;
+			display: block;
+			padding: @paddingSmall 0;
+			margin: @marginSmall 0;
+			text-transform: uppercase;
+			font-size: .9em;
+			font-weight: normal;
 		}
 		thead {
 			td, th {
-				display:none;
+				display: none;
 			}
 		}
 		tbody th {
-			margin-top:3em;
+			margin-top: 3em;
 		}
 	}
 }
-
 
 /* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
 @media ( min-width: 35em ) {
 	.ui-table-reflow.ui-responsive {
-		display:table-row-group;
+		display: table-row-group;
 		td, th, tbody th, tbody td, thead td, thead th {
-			display:table-cell;
-			margin:0;
+			display: table-cell;
+			margin: 0;
 		}
 		td .ui-table-cell-label, th .ui-table-cell-label {
-			display:none;
+			display: none;
 		}
 	}
 }
-
 
 /* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
 /* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
@@ -61,9 +59,7 @@
 	.ui-table-reflow.ui-responsive td,
 	.ui-table-reflow.ui-responsive th {
 		width: 100%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
+		.border-box;
 		float: left;
 		clear: left;
 	}

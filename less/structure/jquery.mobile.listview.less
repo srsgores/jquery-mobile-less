@@ -3,26 +3,19 @@
 	list-style: none;
 	padding: 0;
 	> .ui-li.ui-first-child, .ui-btn.ui-first-child > .ui-li > .ui-btn-text > .ui-link-inherit {
-		-webkit-border-top-right-radius: inherit;
-		border-top-right-radius: inherit;
-		-webkit-border-top-left-radius: inherit;
-		border-top-left-radius: inherit;
+		.border-radius-top(inherit)
 	}
 	> .ui-li.ui-first-child .ui-li-link-alt {
-		-webkit-border-top-right-radius: inherit;
-		border-top-right-radius: inherit;
+		.border-top-right-radius(inherit);
 	}
 	> .ui-li.ui-first-child .ui-li-thumb:not(.ui-li-icon) {
-		-webkit-border-top-left-radius: inherit;
-		border-top-left-radius: inherit;
+		.border-top-left-radius(inherit);
 	}
 	> .ui-li.ui-last-child .ui-li-link-alt {
-		-webkit-border-bottom-right-radius: inherit;
-		border-bottom-right-radius: inherit;
+		.border-bottom-right-radius(inherit);
 	}
 	> .ui-li.ui-last-child .ui-li-thumb:not(.ui-li-icon) {
-		-webkit-border-bottom-left-radius: inherit;
-		border-bottom-left-radius: inherit;
+		.border-bottom-left-radius(inherit);
 	}
 	.ui-li-icon {
 		position: absolute;
@@ -30,10 +23,10 @@
 		left: 10px;
 		top: 0;
 		top: .9em;
-		max-height: 80px;
-		max-height: 16px;
-		max-width: 80px;
-		max-width: 16px;
+		max-height: 5em;
+		max-height: @baseFontSize;
+		max-width: 5em;
+		max-width: @baseFontSize;
 		float: left;
 		margin-right: 10px;
 	}
@@ -44,8 +37,8 @@
 
 ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui-li-dec {
 	font-size: .8em;
-	display: inline-block;
-	padding-right: .3em;
+	.inline-block();
+	padding-right: @marginMini;
 	font-weight: normal;
 	counter-increment: listnumbering;
 	content: counter(listnumbering) ". ";
@@ -58,11 +51,11 @@ ol.ui-listview .ui-li-jsnumbering:before {
 /* to avoid chance of duplication */
 
 .ui-content .ui-listview, .ui-panel-inner > .ui-listview {
-	margin: -15px;
+	margin: -@baseFontSize;
 }
 
 .ui-collapsible-content > .ui-listview {
-	margin: -10px -15px;
+	margin: -10px -@baseFontSize;
 }
 
 .ui-collapsible-content .ui-listview-inset {
@@ -74,7 +67,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-collapsible-content .ui-listview-filter {
-	margin: -10px -15px 10px -15px;
+	margin: -10px -@baseFontSize 10px -@baseFontSize;
 	border-bottom: inherit;
 }
 
@@ -84,7 +77,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-content .ui-listview-inset, .ui-panel-inner .ui-listview-inset {
-	margin: 1em 0;
+	margin: @margin 0;
 }
 
 .ui-li {
@@ -126,8 +119,8 @@ ol.ui-listview .ui-li-jsnumbering:before {
 
 .ui-li-divider {
 	margin: 0;
-	padding: .5em 15px;
-	font-size: 14px;
+	padding: @paddingSmall @baseFontSize;
+	font-size: @fontSizeMedium;
 	font-weight: bold;
 	cursor: default;
 }
@@ -152,22 +145,19 @@ ol.ui-listview .ui-li-jsnumbering:before {
 
 ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui-li-dec {
 	font-size: .8em;
-	display: inline-block;
-	padding-right: .3em;
+	.inline-block();
+	padding-right: @marginMini;
 	font-weight: normal;
 	counter-increment: listnumbering;
 	content: counter(listnumbering) ". ";
 }
 
 .ui-listview > .ui-li.ui-last-child, .ui-listview .ui-btn.ui-last-child > .ui-li > .ui-btn-text > .ui-link-inherit, .ui-collapsible-content > .ui-listview:not(.ui-listview-inset), .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) .ui-li.ui-last-child {
-	-webkit-border-bottom-right-radius: inherit;
-	border-bottom-right-radius: inherit;
-	-webkit-border-bottom-left-radius: inherit;
-	border-bottom-left-radius: inherit;
+	.border-radius(inherit);
 }
 
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
-	padding: .7em 15px;
+	padding: .7em @baseFontSize;
 	display: block;
 }
 
@@ -178,7 +168,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 
 .ui-li-has-icon .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-icon {
 	min-height: 20px;
-	padding-left: 40px;
+	padding-left: 2.5em;
 }
 
 .ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-count, .ui-li-divider.ui-li-has-count {
@@ -186,7 +176,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
-	padding-right: 40px;
+	padding-right: 2.5em;
 }
 
 .ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow.ui-li-has-count {
@@ -194,7 +184,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-li-heading {
-	font-size: 16px;
+	font-size: @baseFontSize;
 	font-weight: bold;
 	display: block;
 	margin: .6em 0;
@@ -217,8 +207,8 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 	position: absolute;
 	left: 1px;
 	top: 0;
-	max-height: 80px;
-	max-width: 80px;
+	max-height: 5em;
+	max-width: 5em;
 	float: left;
 	margin-right: 10px;
 }
@@ -232,22 +222,22 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 	float: right;
 	width: 50%;
 	text-align: right;
-	margin: .3em 0;
+	margin: @marginMini 0;
 }
 
 .ui-li-has-alt .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt {
-	padding-right: 53px;
+	padding-right: 3.3em;
 }
 
 .ui-li-has-alt.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt.ui-li-has-count {
-	padding-right: 88px;
+	padding-right: 5.5em;
 }
 
 .ui-li-has-count .ui-li-count {
 	position: absolute;
-	font-size: 11px;
+	font-size: @fontSizeSmall;
 	font-weight: bold;
-	padding: .2em .5em;
+	padding: @paddingMini @paddingSmall;
 	top: 50%;
 	margin-top: -.9em;
 	right: 10px;
@@ -258,16 +248,16 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-li-has-arrow.ui-li-has-count .ui-li-count {
-	right: 40px;
+	right: 2.5em;
 }
 
 .ui-li-has-alt.ui-li-has-count .ui-li-count {
-	right: 53px;
+	right: 3.3125em;
 }
 
 .ui-li-link-alt {
 	position: absolute;
-	width: 40px;
+	width: 2.5em;
 	height: 100%;
 	border-width: 0;
 	border-left-width: 1px;
@@ -307,16 +297,16 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 .ui-listview-filter {
 	border-width: 0;
 	overflow: hidden;
-	margin: -15px -15px 15px -15px;
+	margin: -@baseFontSize -@baseFontSize @baseFontSize -@baseFontSize;
 	.ui-input-search {
-		margin: 5px;
+		margin: @fontSizeMini;
 		width: auto;
 		display: block;
 	}
 }
 
 .ui-listview-filter-inset {
-	margin: -15px -5px;
+	margin: -@baseFontSize -5px;
 	background: transparent;
 }
 
@@ -327,7 +317,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 	}
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 45em) {
 	.ui-li-aside {
 		width: 45%;
 	}

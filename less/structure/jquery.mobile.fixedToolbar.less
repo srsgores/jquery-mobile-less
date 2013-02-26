@@ -30,8 +30,7 @@
 
 .ui-header-fullscreen,
 .ui-footer-fullscreen {
-	filter: Alpha(Opacity = 90);
-	opacity: .9;
+	.opacity(90);
 }
 
 .ui-page-header-fixed {
@@ -63,5 +62,5 @@
 
 /* workarounds for other widgets */
 .ui-android-2x-fixed .ui-li-has-thumb {
-	-webkit-transform: translate3d(0, 0, 0);
+	.translate3d(0, 0, 0);
 }

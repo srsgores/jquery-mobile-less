@@ -1,20 +1,20 @@
 @formsTextInput: true;
 
 label.ui-input-text {
-	font-size: 16px;
-	line-height: 1.4;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
 	display: block;
 	font-weight: normal;
-	margin: 0 0 .3em;
+	margin: 0 0 @marginMini;
 }
 
 input.ui-input-text, textarea.ui-input-text {
 	background-image: none;
-	padding: .4em;
+	padding: @borderRadius;
 	margin: .5em 0;
 	min-height: 1.4em;
 	line-height: 1.4em;
-	font-size: 16px;
+	font-size: @baseFontSize;
 	display: block;
 	width: 100%;
 	outline: 0;
@@ -28,7 +28,7 @@ div.ui-input-text input.ui-input-text, div.ui-input-text textarea.ui-input-text,
 .ui-input-search input.ui-input-text {
 	border: none;
 	width: 100%;
-	padding: .4em 0;
+	padding: @borderRadius 0;
 	margin: 0;
 	display: block;
 	background: transparent none;
@@ -46,16 +46,16 @@ div.ui-input-text input.ui-input-text, div.ui-input-text textarea.ui-input-text,
 }
 
 div.ui-input-text {
-	padding: 0 .4em;
+	padding: 0 @borderRadius;
 }
 
 div.ui-input-has-clear {
-	padding: 0 30px 0 .4em;
+	padding: 0 30px 0 @borderRadius;
 }
 
 input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini,
 .ui-input-search.ui-mini, div.ui-input-text.ui-mini {
-	margin: .25em 0;
+	margin: @fontSizeMini 0;
 }
 
 .ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text,
@@ -64,10 +64,7 @@ input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini,
 }
 
 textarea.ui-input-text {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+	.border-box
 }
 
 input.ui-input-text {
@@ -76,10 +73,7 @@ input.ui-input-text {
 
 textarea.ui-input-text {
 	height: 50px;
-	-webkit-transition: height 200ms linear;
-	-moz-transition: height 200ms linear;
-	-o-transition: height 200ms linear;
-	transition: height 200ms linear;
+	.transition(200ms linear);
 }
 
 textarea.ui-mini {
@@ -94,7 +88,7 @@ textarea.ui-mini {
 	content: "";
 	width: 18px;
 	height: 18px;
-	opacity: .5;
+	.opacity(50);
 }
 
 .ui-input-search .ui-input-clear, .ui-input-text .ui-input-clear {

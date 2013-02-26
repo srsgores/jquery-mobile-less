@@ -12,12 +12,14 @@
 /*Type*/
 @baseFontSize: 16px;
 @baseFontFamily: "Open Sans", "sans-serif", "arial";
-@fontSizeSmall: 85%;
-@fontSizeMedium: 90%;
-@fontSizeLarge: 125%;
-@fontSizeMini: 75%;
+
 @baseLineHeight: 1.4;
 @em: 1em;
+
+@fontSizeSmall: @em / 2;
+@fontSizeMedium: @em * 0.75;
+@fontSizeLarge: @em * 1.25;
+@fontSizeMini: @em * 0.25;
 @line: @em * @baseLineHeight;
 @baseFontWeight: 500;
 
@@ -76,7 +78,9 @@
 @paddingMini: @padding / @multiplierLarge;
 
 @margin: @em;
+@marginSmall: @margin / @multiplier;
 @marginLarge: @margin * @multiplier;
+@marginMini: @margin / @multiplierLarge;
 
 @paddingPercentage: 6%;
 @paddingSmallPercentage: 1.6%;
@@ -112,8 +116,8 @@ CSS3 PIE settings
 /* =============================================================================
 shadow
 ========================================================================== */
-@shadow: 0 0 @marginLarge @textColour;
-
+@shadow: @fontSizeMini 0 @fontSizeMini fade(@textColour, 16%);
+@insetShadow: -@fontSizeMini 0 @fontSizeMini fade(@textColour, 16%);
 /* Transitions */
 @transition-time: 0.5s;
 
@@ -126,9 +130,10 @@ Buttons
 /* =============================================================================
 Borders
 ========================================================================== */
-@borderStyle: 1px solid;
+@borderStyle: solid;
+@borderWidth: 1px;
 @borderColour: lighten(@textColour, 40%);
-@border: @borderStyle @borderColour;
+@border: @borderWidth @borderStyle @borderColour;
 
 // Grays
 // -------------------------
@@ -183,3 +188,5 @@ Borders
 @inputDisabledBackground: @grayLighter;
 @formActionsBackground: #f5f5f5;
 @inputHeight: @baseLineHeight + @paddingSmall;
+
+@shadow: @borderRadius 0 @borderRadius fade(lighten(@textColour, 30%), 15%);

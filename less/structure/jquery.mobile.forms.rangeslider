@@ -47,7 +47,7 @@
 }
 
 .ui-rangeslider.ui-mini .ui-rangeslider-sliders {
-	margin: .25em 68px;
+	margin: @fontSizeMini 68px;
 	.ui-slider-track {
 		top: 8px;
 	}
@@ -61,7 +61,7 @@
 }
 
 html > body .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
-	height: 15px;
+	height: @baseFontSize;
 	border-width: 1px;
 }
 

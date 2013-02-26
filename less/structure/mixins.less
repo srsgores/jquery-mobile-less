@@ -19,16 +19,16 @@
 .just-icon(@icon-ascii){
 	content: @icon-ascii;
 	font-family: "IcoMoon";
-	font-size: 9px;
+	font-size: @fontSizeSmall;
 	color: #FFF;
 	position: absolute;
-	top: 5px;
+	top: @fontSizeMini;
 	left: 4px;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.84);
 }
 .right-icon(@icon-ascii){
 	content: @icon-ascii;
-	font-size: 1.2em;
+	font-size: @fontSizeLarge;
 	font-family: "IcoMoon";
 	float: right;
 }
@@ -162,7 +162,7 @@ Site-wide rules
 // ------------------
 .tab-focus(){ // Default
 	outline: thin dotted #333; // Webkit
-	outline: 5px auto -webkit-focus-ring-color;
+	outline: @fontSizeMini auto -webkit-focus-ring-color;
 	outline-offset: -2px;
 }
 
@@ -184,7 +184,7 @@ Site-wide rules
 
 .inline-block(@alignment: auto) {
 	display: -moz-inline-stack;
-	display: inline-block;
+	.inline-block();
 	vertical-align: @alignment;
 	.ie7-inline-block();
 }
@@ -195,7 +195,7 @@ Site-wide rules
 // mean that space between those elements will be .6em (~2 space characters) in IE7,
 // instead of the 1 space in other browsers.
 .ie7-restore-left-whitespace(){
-	*margin-left: .3em;
+	*margin-left: @marginMini;
 
 	&:first-child {
 		*margin-left: 0;
@@ -203,7 +203,7 @@ Site-wide rules
 }
 
 .ie7-restore-right-whitespace(){
-	*margin-right: .3em;
+	*margin-right: @marginMini;
 
 	&:last-child {
 		*margin-left: 0;
@@ -661,7 +661,7 @@ Site-wide rules
 // -------------------------
 // For tipsies and popovers
 #popoverArrow {
-	.top(@arrowWidth: 5px, @color: @black){
+	.top(@arrowWidth: @fontSizeMini, @color: @black){
 		bottom: 0;
 		left: 50%;
 		margin-left: -@arrowWidth;
@@ -669,7 +669,7 @@ Site-wide rules
 		border-right: @arrowWidth solid transparent;
 		border-top: @arrowWidth solid @color;
 	}
-	.left(@arrowWidth: 5px, @color: @black){
+	.left(@arrowWidth: @fontSizeMini, @color: @black){
 		top: 50%;
 		right: 0;
 		margin-top: -@arrowWidth;
@@ -677,7 +677,7 @@ Site-wide rules
 		border-bottom: @arrowWidth solid transparent;
 		border-left: @arrowWidth solid @color;
 	}
-	.bottom(@arrowWidth: 5px, @color: @black){
+	.bottom(@arrowWidth: @fontSizeMini, @color: @black){
 		top: 0;
 		left: 50%;
 		margin-left: -@arrowWidth;
@@ -685,7 +685,7 @@ Site-wide rules
 		border-right: @arrowWidth solid transparent;
 		border-bottom: @arrowWidth solid @color;
 	}
-	.right(@arrowWidth: 5px, @color: @black){
+	.right(@arrowWidth: @fontSizeMini, @color: @black){
 		top: 50%;
 		left: 0;
 		margin-top: -@arrowWidth;
@@ -697,4 +697,11 @@ Site-wide rules
 
 .centred {
 	text-align: center;
+}
+
+.text-size-adjust(@size: 100%) {
+	-webkit-text-size-adjust: @size;
+	-ms-text-size-adjust: @size;
+	-moz-text-size-adjust: @size;
+	text-size-adjust: @size;
 }
