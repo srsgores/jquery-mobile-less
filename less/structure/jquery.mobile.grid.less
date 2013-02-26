@@ -1,4 +1,4 @@
-@grids: true;
+@grid: true;
 
 .enableLegacyGrid(@legacyGridEnabled) when (@legacyGridEnabled = true) {
 	.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
@@ -109,3 +109,6 @@
 		.generate-grid(@column-selector-number-at-end);
 	}
 }
+
+.enableModernGrid(@legacyGridEnabled);
+.enableLegacyGrid(@legacyGridEnabled);

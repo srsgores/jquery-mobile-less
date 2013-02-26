@@ -2571,6 +2571,79 @@ div.ui-mobile-viewport {
     transform: translateX(0) scale(1);
   }
 }
+.ui-grid-a,
+.ui-grid-b,
+.ui-grid-c,
+.ui-grid-d {
+  overflow: hidden;
+}
+.ui-block-a,
+.ui-block-b,
+.ui-block-c,
+.ui-block-d,
+.ui-block-e {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ui-grid-solo .ui-block-a {
+  display: block;
+  float: none;
+}
+.ui-grid-a .ui-block-a {
+  width: 49.95%;
+  clear: left;
+}
+.ui-grid-a .ui-block-b {
+  width: 49.95%;
+}
+.ui-grid-a > :nth-child(n) {
+  width: 50%;
+  margin-right: -0.5px;
+}
+.ui-grid-b .ui-block-b,
+.ui-grid-b .ui-block-c {
+  width: 33.25%;
+}
+.ui-grid-b .ui-block-a {
+  width: 33.25%;
+  clear: left;
+}
+.ui-grid-b > :nth-child(n) {
+  width: 33.333%;
+  margin-right: -0.5px;
+}
+.ui-grid-c .ui-block-b,
+.ui-grid-c .ui-block-c,
+.ui-grid-c .ui-block-d {
+  width: 24.925%;
+}
+.ui-grid-c .ui-block-a {
+  width: 24.925%;
+  clear: left;
+}
+.ui-grid-c > :nth-child(n) {
+  width: 25%;
+  margin-right: -0.5px;
+}
+.ui-grid-d .ui-block-b,
+.ui-grid-d .ui-block-c,
+.ui-grid-d .ui-block-d,
+.ui-grid-d .ui-block-e {
+  width: 19.925%;
+}
+.ui-grid-d .ui-block-a {
+  width: 19.925%;
+  clear: left;
+}
+.ui-grid-d > :nth-child(n) {
+  width: 20%;
+}
 /* fixed page header & footer configuration */
 .ui-header-fixed,
 .ui-footer-fixed {
@@ -4891,5 +4964,284 @@ div.ui-slider-switch.ui-mini {
   }
   .ui-responsive-panel .ui-panel-dismiss-display-push {
     display: none;
+  }
+}
+@media screen and (orientation: portrait) {
+  .ui-mobile,
+  .ui-mobile .ui-page {
+    min-height: 26.25em;
+  }
+}
+@media screen and (orientation: landscape) {
+  .ui-mobile,
+  .ui-mobile .ui-page {
+    min-height: 18.75em;
+  }
+}
+/* = 450px if 16px font size */
+@media all and (min-width: 28em) {
+  .ui-field-contain label.ui-input-text {
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: auto;
+    *display: inline;
+    /* IE7 inline-block hack */
+  
+    *zoom: 1;
+    stop: being-broken;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+  .ui-field-contain input.ui-input-text,
+  .ui-field-contain textarea.ui-input-text,
+  .ui-field-contain .ui-input-search,
+  .ui-field-contain div.ui-input-text {
+    width: 78%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: auto;
+    *display: inline;
+    /* IE7 inline-block hack */
+  
+    *zoom: 1;
+    stop: being-broken;
+  }
+  .ui-field-contain .ui-input-search,
+  .ui-field-contain div.ui-input-text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ui-hide-label input.ui-input-text,
+  .ui-hide-label textarea.ui-input-text,
+  .ui-hide-label .ui-input-search,
+  .ui-hide-label div.ui-input-text,
+  .ui-input-search input.ui-input-text,
+  div.ui-input-text input.ui-input-text {
+    width: 100%;
+  }
+  .ui-field-contain .ui-mobile fieldset.ui-field-contain {
+    border-width: 0;
+    padding: 1em;
+    margin: 1em 0;
+  }
+  .ui-field-contain,
+  .ui-field-contain .ui-select {
+    width: 78%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: auto;
+    *display: inline;
+    /* IE7 inline-block hack */
+  
+    *zoom: 1;
+    stop: being-broken;
+  }
+  .ui-hide-label .ui-select {
+    width: 100%;
+  }
+}
+/* = 560px if 16px font size */
+@media all and (max-width: 35em) {
+  .ui-responsive .ui-block-a,
+  .ui-responsive .ui-block-b,
+  .ui-responsive .ui-block-c,
+  .ui-responsive .ui-block-d,
+  .ui-responsive .ui-block-e {
+    width: 100%;
+    float: none;
+  }
+}
+/* = 768px and 1024px if 16px font size */
+@media only screen and (min-device-width: 48em) and (max-device-width: 64em) {
+  
+}
+/* = 450px if 16px font size */
+@media all and (min-width: 28em) {
+  
+}
+@media (min-width: 55em) {
+  
+}
+@media only all {
+  
+}
+/*------------------------------------------------------------------------------------------------------------------------
+	Author: Sean Goresht
+	www: http://seangoresht.com/
+	github: https://github.com/srsgores
+	twitter: http://twitter.com/S.Goresht
+
+	Licensed under the GNU Public License
+
+	=============================================================================
+	Filename:  loaders
+	=============================================================================
+	This file contains css3 loaders for ajax.
+--------------------------------------------------------------------------------------------------------------------- */
+/* =============================================================================
+CSS loaders
+========================================================================== */
+#ajaxloader1,
+#ajaxloader2,
+#ajaxloader3,
+#ajaxloader4 {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+  border: 8px solid #0a0a0a;
+  border-right-color: transparent;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 2px #eee;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -ms-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#ajaxloader1::after {
+  content: 'Loading...';
+  font-size: 0.8em;
+  font-weight: 300;
+}
+#ajaxloader2 {
+  border-right: 0 none;
+}
+#ajaxloader3 {
+  border-left-color: transparent;
+}
+#ajaxloader4 {
+  border-bottom-color: transparent;
+}
+#ajaxloader3::after,
+#ajaxloader4::after {
+  display: block;
+  content: " ";
+  width: 9px;
+  height: 9px;
+  border: 6px solid #fff;
+  margin: 4px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#ajaxloader3::after {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+#ajaxloader4::after {
+  width: 13px;
+  height: 13px;
+  margin: 1px;
+  border-width: 8px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+  50% {
+    -moz-transform: rotate(180deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+}
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+  50% {
+    -ms-transform: rotate(180deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+}
+@-o-keyframes spin {
+  from {
+    -o-transform: rotate(0deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+  50% {
+    -o-transform: rotate(180deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  to {
+    -o-transform: rotate(360deg);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   }
 }
