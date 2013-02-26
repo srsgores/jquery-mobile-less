@@ -19,14 +19,14 @@
 	}
 	.ui-li-icon {
 		position: absolute;
-		left: 1px;
+		left: @borderWidth;
 		left: 10px;
 		top: 0;
 		top: .9em;
 		max-height: 5em;
-		max-height: @baseFontSize;
+		max-height: @em;
 		max-width: 5em;
-		max-width: @baseFontSize;
+		max-width: @em;
 		float: left;
 		margin-right: 10px;
 	}
@@ -51,11 +51,11 @@ ol.ui-listview .ui-li-jsnumbering:before {
 /* to avoid chance of duplication */
 
 .ui-content .ui-listview, .ui-panel-inner > .ui-listview {
-	margin: -@baseFontSize;
+	margin: -@em;
 }
 
 .ui-collapsible-content > .ui-listview {
-	margin: -10px -@baseFontSize;
+	margin: -10px -@em;
 }
 
 .ui-collapsible-content .ui-listview-inset {
@@ -67,7 +67,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-collapsible-content .ui-listview-filter {
-	margin: -10px -@baseFontSize 10px -@baseFontSize;
+	margin: -10px -@em 10px -@em;
 	border-bottom: inherit;
 }
 
@@ -89,7 +89,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 	overflow: visible;
 	text-align: left;
 	border-width: 0;
-	border-top-width: 1px;
+	border-top-width: @borderWidth;
 	.ui-btn-text a.ui-link-inherit {
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -110,7 +110,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 	overflow: visible;
 	text-align: left;
 	border-width: 0;
-	border-top-width: 1px;
+	border-top-width: @borderWidth;
 }
 
 .ui-li.ui-btn {
@@ -119,7 +119,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 
 .ui-li-divider {
 	margin: 0;
-	padding: @paddingSmall @baseFontSize;
+	padding: @paddingSmall @em;
 	font-size: @fontSizeMedium;
 	font-weight: bold;
 	cursor: default;
@@ -131,12 +131,12 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-listview-inset .ui-li {
-	border-right-width: 1px;
-	border-left-width: 1px;
+	border-right-width: @borderWidth;
+	border-left-width: @borderWidth;
 }
 
 .ui-li.ui-last-child, .ui-li.ui-field-contain.ui-last-child {
-	border-bottom-width: 1px;
+	border-bottom-width: @borderWidth;
 }
 
 .ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > .ui-li.ui-last-child {
@@ -157,7 +157,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
-	padding: .7em @baseFontSize;
+	padding: .7em @em;
 	display: block;
 }
 
@@ -184,7 +184,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-li-heading {
-	font-size: @baseFontSize;
+	font-size: @em;
 	font-weight: bold;
 	display: block;
 	margin: .6em 0;
@@ -205,7 +205,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 
 .ui-li-thumb {
 	position: absolute;
-	left: 1px;
+	left: @borderWidth;
 	top: 0;
 	max-height: 5em;
 	max-width: 5em;
@@ -260,7 +260,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 	width: 2.5em;
 	height: 100%;
 	border-width: 0;
-	border-left-width: 1px;
+	border-left-width: @borderWidth;
 	top: 0;
 	right: 0;
 	margin: 0;
@@ -272,7 +272,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 		right: 8px;
 		top: 50%;
 		margin: -13px 0 0 0;
-		border-bottom-width: 1px;
+		border-bottom-width: @borderWidth;
 		z-index: -1;
 		.ui-icon {
 			right: 50%;
@@ -297,7 +297,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 .ui-listview-filter {
 	border-width: 0;
 	overflow: hidden;
-	margin: -@baseFontSize -@baseFontSize @baseFontSize -@baseFontSize;
+	margin: -@em -@em @em -@em;
 	.ui-input-search {
 		margin: @fontSizeMini;
 		width: auto;
@@ -306,7 +306,7 @@ ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui
 }
 
 .ui-listview-filter-inset {
-	margin: -@baseFontSize -5px;
+	margin: -@em -5px;
 	background: transparent;
 }
 

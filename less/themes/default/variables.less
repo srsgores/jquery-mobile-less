@@ -94,12 +94,10 @@
 Colours
 ========================================================================== */
 @textColour: #000;
-@primaryColour: @textColour;
-colour of text and main colour overall
+@primaryColour: @textColour; //colour of text and main colour overall
 @secondaryColour: #6F6F6F;
 @tertiaryColour: #D6D6D6;
-@codeColour: lighten(@textColour, 60%);
-background colour.  Should be the opposite of primary colour for good results
+@codeColour: lighten(@textColour, 60%); //background colour.  Should be the opposite of primary colour for good results
 @bodyBackgroundImage: url("../img/pw_maze_white.png");
 @bodyBackgroundColour: spin(@textColour, 180); //inverse of text coliour
 @moduleBackground: fade(@secondaryColour, 90%);

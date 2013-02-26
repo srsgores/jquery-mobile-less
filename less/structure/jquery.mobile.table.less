@@ -27,21 +27,21 @@
 }
 
 .table-stroke thead th {
-	border-bottom: 1px solid #d6d6d6;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: @borderWidth solid #d6d6d6;
+	border-bottom: @borderWidth solid rgba(0, 0, 0, 0.1);
 }
 
 .table-stroke tbody {
 	th, td {
-		border-bottom: 1px solid #e6e6e6;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+		border-bottom: @borderWidth solid #e6e6e6;
+		border-bottom: @borderWidth solid rgba(0, 0, 0, 0.05);
 	}
 }
 
 .table-stripe {
 	thead th, tbody tr:last-child {
-		border-bottom: 1px solid #d6d6d6;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: @borderWidth solid #d6d6d6;
+		border-bottom: @borderWidth solid rgba(0, 0, 0, 0.1);
 	}
 	tbody tr:nth-child(odd) {
 		td, th {

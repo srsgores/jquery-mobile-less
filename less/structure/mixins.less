@@ -24,7 +24,7 @@
 	position: absolute;
 	top: @fontSizeMini;
 	left: 4px;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.84);
+	text-shadow: 0 @borderWidth rgba(0, 0, 0, 0.84);
 }
 .right-icon(@icon-ascii){
 	content: @icon-ascii;
@@ -184,7 +184,7 @@ Site-wide rules
 
 .inline-block(@alignment: auto) {
 	display: -moz-inline-stack;
-	.inline-block();
+	display: inline-block;
 	vertical-align: @alignment;
 	.ie7-inline-block();
 }

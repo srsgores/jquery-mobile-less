@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 1px;
+	bottom: @borderWidth;
 	position: absolute;
 	.opacity(0);
 	z-index: 1099;
@@ -55,7 +55,7 @@
 		margin: @marginSmall;
 	}
 	.ui-title {
-		font-size: @baseFontSize;
+		font-size: @em;
 		font-weight: bold;
 		margin-top: @marginSmall;
 		margin-bottom: @marginSmall;
@@ -106,7 +106,7 @@
 	.ui-popup .ui-field-contain .ui-controlgroup-label,
 	.ui-popup .ui-field-contain label.ui-select,
 	.ui-popup .ui-field-contain label.ui-input-text {
-		font-size: @baseFontSize;
+		font-size: @em;
 		line-height: @baseLineHeight;
 		display: block;
 		font-weight: normal;

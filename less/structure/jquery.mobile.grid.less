@@ -1,6 +1,6 @@
 @grids: true;
 
-.enableLegacyGrid when (@legacyGridEnabled = true) {
+.enableLegacyGrid(@legacyGridEnabled) when (@legacyGridEnabled = true) {
 	.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
 		overflow: hidden;
 	}
@@ -10,7 +10,7 @@
 		padding: 0;
 		border: 0;
 		float: left;
-		min-height: 1px;
+		min-height: @borderWidth;
 		.border-box
 	}
 
@@ -75,36 +75,37 @@
 	}
 }
 
-
-.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-block-e when (@enableLegacyGrid = false) {
-	.border-box; //margin: remember that this will be exclusive to media queries still, as it depends on the resolution!
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	.generate-grid(@column-selector-number-at-end) when (@column-selector-number-at-end = true) {
-		.setGrid(@index) when (@index >= 1) {
-			(~".@{col-identifier}@{col-name-@{index}}") {
-				width: @col-unit * @index - @col-margin-right;
-				float: left;
-				min-height: 1px;
-				.transition-all(@transition-time);
-				.border-box;
+.enableModernGrid(@legacyGridEnabled) when (@legacyGridEnabled = false) {
+	.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d, .ui-block-e  {
+		.border-box; //margin: remember that this will be exclusive to media queries still, as it depends on the resolution!
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		.generate-grid(@column-selector-number-at-end) when (@column-selector-number-at-end = true) {
+			.setGrid(@index) when (@index >= 1) {
+				(~".@{col-identifier}@{col-name-@{index}}") {
+					width: @col-unit * @index - @col-margin-right;
+					float: left;
+					min-height: @borderWidth;
+					.transition-all(@transition-time);
+					.border-box;
+				}
+				.setGrid(@index - 1);
 			}
-			.setGrid(@index - 1);
+			.setGrid(0) {}
+			.setGrid(@num-cols);
 		}
-		.setGrid(0) {}
-		.setGrid(@num-cols);
-	}
-	.generate-grid(@column-selector-number-at-end) when (@column-selector-number-at-end = false) {
-		.setGrid(@index) when (@index >= 1) {
-			(~".@{col-name-@{index}}@{col-identifier}") {
-				width: @col-unit * @index - @col-margin-right;
+		.generate-grid(@column-selector-number-at-end) when (@column-selector-number-at-end = false) {
+			.setGrid(@index) when (@index >= 1) {
+				(~".@{col-name-@{index}}@{col-identifier}") {
+					width: @col-unit * @index - @col-margin-right;
+				}
+				.setGrid(@index - 1);
 			}
-			.setGrid(@index - 1);
+			.setGrid(0) {}
+			.setGrid(@num-cols);
 		}
-		.setGrid(0) {}
-		.setGrid(@num-cols);
+		.generate-grid(@column-selector-number-at-end);
 	}
-	.generate-grid(@column-selector-number-at-end);
 }

@@ -19,7 +19,7 @@
 }
 
 .ui-controlgroup-label {
-	font-size: @baseFontSize;
+	font-size: @em;
 	line-height: 1.4;
 	font-weight: normal;
 	margin: 0 0 @borderRadius;
@@ -34,7 +34,7 @@
 
 .ui-controlgroup {
 	.ui-checkbox label, .ui-radio label {
-		font-size: @baseFontSize;
+		font-size: @em;
 	}
 	.ui-controlgroup-controls, .ui-radio, .ui-checkbox, .ui-select {
 		.border-radius(inherit);
@@ -102,7 +102,7 @@
 		border-right-width: 0;
 	}
 	.ui-btn.ui-last-child {
-		border-right-width: 1px;
+		border-right-width: @borderWidth;
 		.border-radius-right(inherit);
 	}
 	.ui-btn.ui-first-child {
@@ -111,13 +111,13 @@
 }
 
 .ui-controlgroup.ui-mini .ui-btn-icon-notext .ui-btn-inner, .ui-header .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner, .ui-footer .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
-	height: @baseFontSize;
+	height: @em;
 	padding: @paddingSmall @fontSizeSmall;
 }
 
 .ui-controlgroup-horizontal.ui-mini .ui-btn-inner {
-	height: @baseFontSize;
-	line-height: @baseFontSize;
+	height: @em;
+	line-height: @em;
 }
 
 .ui-controlgroup-vertical .ui-btn {
@@ -125,7 +125,7 @@
 }
 
 .ui-controlgroup-vertical .ui-btn.ui-last-child {
-	border-bottom-width: 1px;
+	border-bottom-width: @borderWidth;
 	.border-radius-bottom(inherit);
 }
 

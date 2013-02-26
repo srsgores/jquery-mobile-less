@@ -73,7 +73,7 @@ div.ui-mobile-viewport {
 .ui-loader-verbose {
 	width: 200px;
 	.opacity(88);
-	box-shadow: 0 1px 1px -1px #fff;
+	box-shadow: 0 @borderWidth @borderWidth -1px #fff;
 	height: auto;
 	margin-left: -110px;
 	margin-top: -43px;
@@ -88,7 +88,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-loader-verbose h1 {
-	font-size: @baseFontSize;
+	font-size: @em;
 	margin: 0;
 	text-align: center;
 }
@@ -99,7 +99,7 @@ div.ui-mobile-viewport {
 	margin: 0;
 	width: 44px;
 	height: 44px;
-	padding: 1px;
+	padding: @borderWidth;
 	.border-radius(@borderRadiusLarge)
 }
 
@@ -109,7 +109,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-loader-textonly {
-	padding: @baseFontSize;
+	padding: @em;
 	margin-left: -115px;
 }
 
@@ -129,23 +129,23 @@ div.ui-mobile-viewport {
 /*headers, content panels*/
 .ui-bar {
 	position: relative;
-	padding: @borderRadius @baseFontSize;
+	padding: @borderRadius @em;
 	overflow: hidden;
 	display: block;
 	clear: both;
-	font-size: @baseFontSize;
+	font-size: @em;
 	margin: 0;
 	h1, h2, h3, h4, h5, h6 {
 		margin: 0;
 		padding: 0;
-		font-size: @baseFontSize;
+		font-size: @em;
 		.inline-block();
 	}
 }
 
 .ui-body {
 	position: relative;
-	padding: @borderRadius @baseFontSize;
+	padding: @borderRadius @em;
 	overflow: hidden;
 	display: block;
 	clear: both;
@@ -199,7 +199,7 @@ div.ui-mobile-viewport {
 .ui-header .ui-title, .ui-footer .ui-title {
 	min-height: 1.1em;
 	text-align: center;
-	font-size: @baseFontSize;
+	font-size: @em;
 	display: block;
 	margin: @marginSmall 30% @marginSmall;
 	padding: 0;
@@ -210,7 +210,7 @@ div.ui-mobile-viewport {
 }
 
 .ui-footer .ui-title {
-	margin: @paddingSmall @baseFontSize @paddingSmall;
+	margin: @paddingSmall @em @paddingSmall;
 }
 
 /* content area*/
@@ -218,7 +218,7 @@ div.ui-mobile-viewport {
 	border-width: 0;
 	overflow: visible;
 	overflow-x: hidden;
-	padding: @baseFontSize;
+	padding: @em;
 }
 
 /* corner styling for dialogs and popups */
@@ -236,8 +236,8 @@ div.ui-mobile-viewport {
 
 /* icons sizing */
 .ui-icon {
-	width: @baseFontSize;
-	height: @baseFontSize;
+	width: @em;
+	height: @em;
 }
 
 /* non-js content hiding */
@@ -251,6 +251,6 @@ div.ui-mobile-viewport {
 .ui-hidden-accessible, .visuallyhidden {
 	position: absolute !important;
 	left: -9999px;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px @borderWidth @borderWidth @borderWidth);
+	clip: rect(1px, @borderWidth, @borderWidth, @borderWidth);
 }
