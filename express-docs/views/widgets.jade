@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	article.jqm-content(data-role='content')
+		h1 Widget reference
+
+		p.jqm-intro This section is a reference for all widget options.
+		ul.jqm-list(data-role='listview', data-inset='true', data-filter='true', data-theme='d', data-divider-theme='d', data-icon='false', data-filter-placeholder='Search widgets...', data-global-nav='docs')
+			li(data-role='list-divider') Widget reference
+			include nav-widgets

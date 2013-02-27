@@ -1,0 +1,51 @@
+!!! 5
+//if lt IE 7
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+	html.no-js.lt-ie9.lt-ie8
+//if lte IE 7
+	script(src = "js/lte-ie7.js")
+//if IE 8
+	html.no-js.lt-ie9
+//if lte IE 8
+	html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if gt IE 8
+	html.no-js
+head
+	title = title
+	description = description
+	block head
+		block header-meta
+			meta(charset = "utf-8")
+			meta(http-equiv = "X-UA-Compatible", content = "IE=edge,chrome=1")
+			title #{title}
+			meta(name = "description", content = "#{description}")
+			meta(name = "viewport", content = "width=device
+		block header-scripts
+			script(src = "js/modernizr.custom.min.js")
+		block header-styles
+			link(href = "http://fonts.googleapis.com/css?family=Open+Sans:400,300", rel = "stylesheet")
+			link(rel = "stylesheet", href = "/css/style.css")
+body
+	#ajaxloader1
+	header.jqm-header(data-role='header')
+		h1.jqm-logo
+			a(href='../../')
+				img(src='../_assets/img/jquery-logo.png', alt='jQuery Mobile Framework')
+		a.jqm-navmenu-link(href='#', data-icon='bars', data-iconpos='notext') Navigation
+		a.jqm-search-link(href='#', data-icon='search', data-iconpos='notext') Search
+		include search
+	#content.container.visuallyhidden.loading
+		block content
+	block footer
+		footer.jqm-footer(data-role='footer')
+			p.jqm-version
+			p Copyright 2013 The jQuery Foundation
+		include global-nav
+	block scripts
+		script(src = "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+		script
+			window.jQuery || document.write("<script src = "js/jquery-1.9.0.min.js"><\\/script>")
+		script(src = "/js/loader.js")
+		script(src = "/js/main.js")
+		script(src = "/js/jquery.mobile-1.3.0.min.js")
