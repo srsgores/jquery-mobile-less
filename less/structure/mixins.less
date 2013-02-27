@@ -521,7 +521,7 @@ Site-wide rules
 		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@startColour),argb(@endColour))); // IE9 and down
 	}
 	.vertical(@startColour: #555, @endColour: #333) {
-		background-color: mix(@startColour, @endColour, 60%);
+		//background-color: mix(@startColour, @endColour, 50%);
 		background-image: -moz-linear-gradient(top, @startColour, @endColour); // FF 3.6+
 		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColour), to(@endColour)); // Safari 4+, Chrome 2+
 		background-image: -webkit-linear-gradient(top, @startColour, @endColour); // Safari 5.1+, Chrome 10+
