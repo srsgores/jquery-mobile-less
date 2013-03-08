@@ -41,18 +41,17 @@
 	}
 	to {
 		-moz-transform: scale(1);
-		.opacity(100);
-		opacity: 0;
+		opacity: 1;
 	}
 }
 @keyframes popin {
 	from {
 		transform: scale(.8);
-		opacity: 0;
+		.opacity(0);
 	}
 	to {
 		transform: scale(1);
-		opacity: 1;
+		.opacity(100);
 	}
 }
 
@@ -79,10 +78,10 @@
 @keyframes popout {
 	from {
 		transform: scale(1);
-		opacity: 1;
+		.opacity(100);
 	}
 	to {
 		transform: scale(.8);
-		opacity: 0;
+		.opacity(0);
 	}
 }

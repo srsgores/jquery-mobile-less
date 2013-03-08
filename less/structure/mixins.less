@@ -286,9 +286,11 @@ Site-wide rules
 
 // Drop shadows
 .box-shadow(@shadow) {
-  -webkit-box-shadow: @shadow;
-     -moz-box-shadow: @shadow;
-          box-shadow: @shadow;
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    -khtml-box-shadow: @shadow;
+    -o-box-shadow: @shadow;
+    box-shadow: @shadow;
 }
 // Animation
 .animation (@name: none, @duration: 0, @delay: 0, @ease: ease) {
@@ -425,7 +427,7 @@ Site-wide rules
 
 // Opacity
 .opacity(@opacity){
-	opacity: @opacity / 100;
+    opacity: @opacity / 100;
     filter: ~"alpha(opacity=@{opacity})";
 }
 
