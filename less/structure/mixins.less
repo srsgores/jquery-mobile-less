@@ -285,12 +285,12 @@ Site-wide rules
 // --------------------------------------------------
 
 // Drop shadows
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow;
-    -moz-box-shadow: @shadow;
-    -khtml-box-shadow: @shadow;
-    -o-box-shadow: @shadow;
-    box-shadow: @shadow;
+.box-shadow(...) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -khtml-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
 }
 // Animation
 .animation (@name: none, @duration: 0, @delay: 0, @ease: ease) {
