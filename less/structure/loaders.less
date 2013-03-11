@@ -24,12 +24,8 @@ CSS loaders
 	border: 8px solid #0a0a0a;
 	border-right-color: transparent;
 	.border-radius(50%);
-	box-shadow: 0 0 25px 2px #eee;
-	-webkit-animation: spin 1s linear infinite;
-	-moz-animation: spin 1s linear infinite;
-	-ms-animation: spin 1s linear infinite;
-	-o-animation: spin 1s linear infinite;
-	animation: spin 1s linear infinite;
+	.box-shadow(0 0 25px 2px #eee);
+    .animation(spin 1s linear infinite);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -98,11 +94,11 @@ CSS loaders
 }
 
 @-ms-keyframes spin
-               {
-	               from { -ms-transform: rotate(0deg); .opacity(40) }
-50%  { -ms-transform: rotate(180deg); .opacity(100); }
-to   { -ms-transform: rotate(360deg); .opacity(40) }
-	}
+{ 
+    from { -ms-transform: rotate(0deg); .opacity(40) }
+    50%  { -ms-transform: rotate(180deg); .opacity(100); }
+    to   { -ms-transform: rotate(360deg); .opacity(40) }
+}
 
 @-o-keyframes spin
 {
