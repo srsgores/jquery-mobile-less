@@ -88,7 +88,7 @@
 					width: @col-unit * @index - @col-margin-right;
 					float: left;
 					min-height: @borderWidth;
-					.transition-all(@transition-time);
+                    .transition(all @transition-time linear);
 					.border-box;
 				}
 				.setGrid(@index - 1);
