@@ -1,0 +1,227 @@
+extends layout
+
+block content
+	article.jqm-content(data-role='content')
+		h1 Collapsibles
+			a.jqm-api-link(href='http://api.jquerymobile.com/collapsible/', data-ajax='false', data-role='button', data-inline='true', data-mini='true', data-icon='arrow-r', data-iconpos='right') API
+		p.jqm-intro
+			| Collapsibles are simple widgets that allow you to expand or collapse content when tapped and
+			| are useful in mobile to provide a compact presentation of content.
+		h2 Basic collapsible
+		p
+			| To create a collapsible block of content, create a container and add the
+			code  data-role="collapsible"
+			| attribute. Directly inside this container, add any header (H1-H6) or legend element. The framework will style
+			| the header to look like a clickable button and add a "+" icon to the left to indicate it's expandable. After the
+			| header, add any HTML markup you want to be collapsible. The framework will wrap this markup in a container that
+			| will be hidden/shown when the heading is clicked.
+		div(data-demo-html='true')
+			div(data-role='collapsible')
+				h4 Heading
+				p
+					| I'm the collapsible content. By default I'm closed, but you can click the header to open me.
+		//
+			/demo-html
+		h2 Theme
+		p
+			| Add the
+			code data-content-theme
+			| attribute to set a theme for the content of the collapsible. To provide a
+			| stronger visual connection between the collapsible header and content, add the
+			code data-content-theme
+			| attribute to the wrapper and specify a theme swatch letter. This applies the swatch's border and
+			em flat
+			| background color (not the gradient) to the content block, removes the rounded corners from the bottom of the
+			| header, and gives the bottom of the content block rounded corners to visually group these elements.
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-theme='b', data-content-theme='d')
+				h4 Heading
+				p I'm the collapsible content with a themed content block set to "d".
+		//
+			/demo-html
+		h2 Expanded
+		p
+			| To expand the content when the page loads, add the
+			code data-collapsed="false"
+			| attribute to the wrapper.
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-collapsed='false', data-theme='b', data-content-theme='d')
+				h4 Heading
+				ul(data-role='listview')
+					li
+						a(href='#') List item 1
+					li
+						a(href='#') List item 2
+					li
+						a(href='#') List item 3
+		//
+			/demo-html
+		h2 Mini sized
+		p
+			| For a more compact version that is useful in toolbars and tight spaces, add the
+			code data-mini="true"
+			| attribute to the element to create a mini version.
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-mini='true', data-theme='b', data-content-theme='a')
+				h4 Heading
+				ul(data-role='listview')
+					li
+						a(href='#') List item 1
+					li
+						a(href='#') List item 2
+					li
+						a(href='#') List item 3
+		//
+			/demo-html
+		h2 Icons
+		p
+			| The default icons of collapsible headings can be overridden by using the
+			code data-collapsed-icon
+			| and
+			code data-expanded-icon
+			| attributes. In the example below,
+			code data-collapsed-icon="arrow-d"
+			| and
+			code data-expanded-icon="arrow-u"
+			| .
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-theme='b', data-content-theme='d', data-collapsed-icon='arrow-d', data-expanded-icon='arrow-u')
+				h4 Heading
+				ul(data-role='listview', data-inset='false')
+					li Read-only list item 1
+					li Read-only list item 2
+					li Read-only list item 3
+		//
+			/demo-html
+		h2 Icon positioning
+		p
+			| The default icon positioning of collapsible headings can be overridden by using the
+			code data-iconpos
+			| attribute. In the below case,
+			code data-iconpos="right"
+			| .
+		div(data-role='collapsible', data-iconpos='right', data-theme='b', data-content-theme='d')
+			h3 I'm a header
+			p
+				code data-iconpos="right"
+		h2 Legend
+		p
+			| For forms, use a
+			code fieldset
+			| and
+			code legend
+			| for the collapsible.
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='collapsible', data-theme='a', data-content-theme='d')
+					legend Legend
+					label(for='textinput-f') Text Input:
+					input#textinput-f(type='text', name='textinput-f', placeholder='Text input', value='')
+					div(data-role='controlgroup')
+						input#checkbox-1-a(type='checkbox', name='checkbox-1-a')
+						label(for='checkbox-1-a') One
+						input#checkbox-2-a(type='checkbox', name='checkbox-2-a')
+						label(for='checkbox-2-a') Two
+						input#checkbox-3-a(type='checkbox', name='checkbox-3-a')
+						label(for='checkbox-3-a') Three
+		//
+			/demo-html
+		h2 Non-inset collapsible
+		p
+			| By default collapsibles have an inset appearance. To make them full width without corner styling add the
+			code data-inset="false"
+			| attribute to the element.
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-inset='false', data-theme='c', data-content-theme='d')
+				h4 Heading
+				p
+					| I'm the collapsible content. By default I'm closed, but you can click the header to open me.
+		//
+			/demo-html
+		h2 Set of individual collapsibles
+		p
+			| This is an example of a series of individual collapsibles. The difference with a "Collapsible Set" is that
+			| multiple collapsible rows can be open at once.
+		div(data-demo-html='true')
+			div(data-role='collapsible', data-theme='b', data-content-theme='d', data-inset='false')
+				h3 Pets
+				ul(data-role='listview')
+					li
+						a(href='#') Canary
+					li
+						a(href='#') Cat
+					li
+						a(href='#') Dog
+					li
+						a(href='#') Gerbil
+					li
+						a(href='#') Iguana
+					li
+						a(href='#') Mouse
+			div(data-role='collapsible', data-theme='b', data-content-theme='d', data-inset='false')
+				h3 Farm animals
+				ul(data-role='listview')
+					li
+						a(href='#') Chicken
+					li
+						a(href='#') Cow
+					li
+						a(href='#') Duck
+					li
+						a(href='#') Horse
+					li
+						a(href='#') Pig
+					li
+						a(href='#') Sheep
+			div(data-role='collapsible', data-theme='b', data-content-theme='d', data-inset='false')
+				h3 Wild Animals
+				ul(data-role='listview')
+					li
+						a(href='#') Aardvark
+					li
+						a(href='#') Alligator
+					li
+						a(href='#') Ant
+					li
+						a(href='#') Bear
+					li
+						a(href='#') Beaver
+					li
+						a(href='#') Cougar
+					li
+						a(href='#') Dingo
+		p
+			| To avoid "double" borders the framework removes the top border of collapsibles that are immediately preceded by
+			| another collapsible. Here we show how to negate this with custom CSS.
+		div(data-demo-html='true', data-demo-css='#negateDoubleBorder')
+			#demo-borders
+				div(data-role='collapsible', data-theme='e', data-content-theme='d', data-inset='false')
+					h3 Pets
+					ul(data-role='listview')
+						li
+							a(href='#') Canary
+						li
+							a(href='#') Cat
+						li
+							a(href='#') Dog
+						li
+							a(href='#') Gerbil
+						li
+							a(href='#') Iguana
+						li
+							a(href='#') Mouse
+				div(data-role='collapsible', data-theme='e', data-content-theme='d', data-inset='false')
+					h3 Farm animals
+					ul(data-role='listview')
+						li
+							a(href='#') Chicken
+						li
+							a(href='#') Cow
+						li
+							a(href='#') Duck
+						li
+							a(href='#') Horse
+						li
+							a(href='#') Pig
+						li
+							a(href='#') Sheep

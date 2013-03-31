@@ -1,0 +1,127 @@
+extends layout
+
+block content
+	article.jqm-content(data-role='content')
+		h1 Checkboxes
+			a.jqm-api-link(href='http://api.jquerymobile.com/checkboxradio/', data-ajax='false', data-role='button', data-inline='true', data-mini='true', data-icon='arrow-r', data-iconpos='right') API
+		p.jqm-intro
+			| Checkboxes are used to provide a list of options where more than one can be selected.
+		h2#check-markup Basic markup
+		p
+			| To create a single checkbox, add an
+			code input
+			| with a
+			code type="checkbox"
+			| attribute and a
+			| corresponding
+			code label
+			| . If the
+			code input
+			| isn't wrapped in its corresponding
+			code label
+			| , be sure to set the
+			code for
+			| attribute of the
+			code label
+			| to match the
+			code id
+			| of the
+			code input
+			| so they are semantically associated.
+		div(data-demo-html='true')
+			form
+				label
+					input(type='checkbox', name='checkbox-0 ')
+					| Check me
+		//
+			/demo-html 
+		h2#check-mini Mini size
+		p
+			| For a more compact version that is useful in toolbars and tight spaces, add the
+			code data-mini="true"
+			| attribute to the element to create a mini version.
+		div(data-demo-html='true')
+			form
+				input#checkbox-mini-0.custom(type='checkbox', name='checkbox-mini-0', data-mini='true')
+				label(for='checkbox-mini-0') I agree
+		//
+			/demo-html 
+		h2#check-vert Vertical group
+		p
+			| Typically, there are multiple checkboxes listed under a question title. To visually integrate multiple
+			| checkboxes into a grouped button set, the framework will automatically remove all margins between buttons
+			| and round only the top and bottom corners of the set if there is a
+			code  data-role="controlgroup"
+			| attribute on the
+			code fieldset
+			| .
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup')
+					legend Vertical:
+					input#checkbox-v-2a(type='checkbox', name='checkbox-v-2a')
+					label(for='checkbox-v-2a') One
+					input#checkbox-v-2b(type='checkbox', name='checkbox-v-2b')
+					label(for='checkbox-v-2b') Two
+					input#checkbox-v-2c(type='checkbox', name='checkbox-v-2c')
+					label(for='checkbox-v-2c') Three
+		//
+			/demo-html 
+		h2#check-horiz Horizontal group
+		p
+			| Checkboxes can also be used for grouped button sets where more than one button can be selected at once, such
+			| as the bold, italic and underline button group seen in word processors. To make a horizontal button set, add
+			| the
+			code  data-type="horizontal"
+			| to the
+			code fieldset
+			| .
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal')
+					legend Horizontal:
+					input#checkbox-h-2a(type='checkbox', name='checkbox-h-2a')
+					label(for='checkbox-h-2a') One
+					input#checkbox-h-2b(type='checkbox', name='checkbox-h-2b')
+					label(for='checkbox-h-2b') Two
+					input#checkbox-h-2c(type='checkbox', name='checkbox-h-2c')
+					label(for='checkbox-h-2c') Three
+		//
+			/demo-html 
+		h2#check-iconpos Icon position
+		p
+			| To swap the position of the check icon from the default position on the left, add the
+			code data-iconpos="right"
+			| attribute to the fieldset to create a mini version.
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-iconpos='right')
+					legend Horizontal, mini sized:
+					input#checkbox-h-6a(type='checkbox', name='checkbox-h-6a')
+					label(for='checkbox-h-6a') One
+					input#checkbox-h-6b(type='checkbox', name='checkbox-h-6b')
+					label(for='checkbox-h-6b') Two
+					input#checkbox-h-6c(type='checkbox', name='checkbox-h-6c')
+					label(for='checkbox-h-6c') Three
+		//
+			/demo-html 
+		h2#check-theme Theme
+		p
+			| To set the theme, add the
+			code  data-theme
+			| attribute on the
+			code fieldset
+			| to the individual
+			| checkbox inputs.
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup')
+					legend Swatch A:
+					input#checkbox-t-2a(type='checkbox', name='checkbox-t-2a', data-theme='a')
+					label(for='checkbox-t-2a') One
+					input#checkbox-t-2b(type='checkbox', name='checkbox-t-2b', data-theme='a')
+					label(for='checkbox-t-2b') Two
+					input#checkbox-t-2c(type='checkbox', name='checkbox-t-2c', data-theme='a')
+					label(for='checkbox-t-2c') Three
+		//
+			/demo-html 

@@ -1,0 +1,268 @@
+extends layout
+
+block content
+	article.jqm-content(data-role='content')
+		h1 Controlgroups
+			a.jqm-api-link(href='http://api.jquerymobile.com/controlgroup/', data-ajax='false', data-role='button', data-inline='true', data-mini='true', data-icon='arrow-r', data-iconpos='right') API
+		p.jqm-intro
+			| Controlgroups are used to visually group a set of buttons to form a single block that looks
+			| contained like a navigation component.
+		h2 Controlgroup vertical
+		div(data-demo-html='true')
+			div(data-role='controlgroup')
+				a(href='#', data-role='button') No icon
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='left') Left
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='right') Right
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='top') Top
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='bottom') Bottom
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='notext') Icon only
+		//
+			/demo-html
+		h3 Mini sized
+		div(data-demo-html='true')
+			div(data-role='controlgroup', data-mini='true')
+				a(href='#', data-role='button', data-mini='true') No icon
+				a(href='#', data-role='button', data-icon='delete', data-mini='true', data-iconpos='left') Left
+				a(href='#', data-role='button', data-icon='delete', data-mini='true', data-iconpos='right') Right
+				a(href='#', data-role='button', data-icon='delete', data-mini='true', data-iconpos='top') Top
+				a(href='#', data-role='button', data-icon='delete', data-mini='true', data-iconpos='bottom') Bottom
+				a(href='#', data-role='button', data-icon='delete', data-mini='true', data-iconpos='notext') Icon only
+		//
+			/demo-html
+		h2 Controlgroup horizontal
+		div(data-demo-html='true')
+			div(data-role='controlgroup', data-type='horizontal')
+				a(href='#', data-role='button') No icon
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='left') Left
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='right') Right
+			div(data-role='controlgroup', data-type='horizontal')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='top') Top
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='top') Top
+			div(data-role='controlgroup', data-type='horizontal')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='bottom') Bottom
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='bottom') Bottom
+			div(data-role='controlgroup', data-type='horizontal')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='notext') Icon only
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='notext') Icon only
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal')
+					button(data-icon='home') Home
+					button(data-icon='search', data-iconpos='notext') Search
+					label.ui-hidden-accessible(for='select-more-1a') More
+					select#select-more-1a(name='select-more-1a')
+						option(value='') Select…
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html
+		h2 Mini sized
+		div(data-demo-html='true')
+			div(data-role='controlgroup', data-type='horizontal', data-mini='true')
+				a(href='#', data-role='button') No icon
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='left') Left
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='right') Right
+			div(data-role='controlgroup', data-type='horizontal', data-mini='true')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='top') Top
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='top') Top
+			div(data-role='controlgroup', data-type='horizontal', data-mini='true')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='bottom') Bottom
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='bottom') Bottom
+			div(data-role='controlgroup', data-type='horizontal', data-mini='true')
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='notext') Icon only
+				a(href='#', data-role='button', data-icon='delete', data-iconpos='notext') Icon only
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal', data-mini='true')
+					button(data-icon='home') Home
+					button(data-icon='search', data-iconpos='notext') Search
+					label.ui-hidden-accessible(for='select-more-2a') More
+					select#select-more-2a(name='select-more-2a')
+						option(value='') Select…
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html
+		h2 Radio button
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup')
+					legend Vertical:
+					input#radio-choice-v-2a(type='radio', name='radio-choice-v-2', value='on', checked='checked')
+					label(for='radio-choice-v-2a') One
+					input#radio-choice-v-2b(type='radio', name='radio-choice-v-2', value='off')
+					label(for='radio-choice-v-2b') Two
+					input#radio-choice-v-2c(type='radio', name='radio-choice-v-2', value='other')
+					label(for='radio-choice-v-2c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-mini='true')
+					legend Vertical, mini sized:
+					input#radio-choice-v-6a(type='radio', name='radio-choice-v-6', value='on', checked='checked')
+					label(for='radio-choice-v-6a') One
+					input#radio-choice-v-6b(type='radio', name='radio-choice-v-6', value='off')
+					label(for='radio-choice-v-6b') Two
+					input#radio-choice-v-6c(type='radio', name='radio-choice-v-6', value='other')
+					label(for='radio-choice-v-6c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal')
+					legend Horizontal:
+					input#radio-choice-h-2a(type='radio', name='radio-choice-h-2', value='on', checked='checked')
+					label(for='radio-choice-h-2a') One
+					input#radio-choice-h-2b(type='radio', name='radio-choice-h-2', value='off')
+					label(for='radio-choice-h-2b') Two
+					input#radio-choice-h-2c(type='radio', name='radio-choice-h-2', value='other')
+					label(for='radio-choice-h-2c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal', data-mini='true')
+					legend Horizontal, mini sized:
+					input#radio-choice-h-6a(type='radio', name='radio-choice-h-6', value='on', checked='checked')
+					label(for='radio-choice-h-6a') One
+					input#radio-choice-h-6b(type='radio', name='radio-choice-h-6', value='off')
+					label(for='radio-choice-h-6b') Two
+					input#radio-choice-h-6c(type='radio', name='radio-choice-h-6', value='other')
+					label(for='radio-choice-h-6c') Three
+		//
+			/demo-html
+		h2 Checkbox
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup')
+					legend Vertical:
+					input#checkbox-v-2a(type='checkbox', name='checkbox-v-2a')
+					label(for='checkbox-v-2a') One
+					input#checkbox-v-2b(type='checkbox', name='checkbox-v-2b')
+					label(for='checkbox-v-2b') Two
+					input#checkbox-v-2c(type='checkbox', name='checkbox-v-2c')
+					label(for='checkbox-v-2c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-mini='true')
+					legend Vertical, mini sized:
+					input#checkbox-v-6a(type='checkbox', name='checkbox-v-6a')
+					label(for='checkbox-v-6a') One
+					input#checkbox-v-6b(type='checkbox', name='checkbox-v-6b')
+					label(for='checkbox-v-6b') Two
+					input#checkbox-v-6c(type='checkbox', name='checkbox-v-6c')
+					label(for='checkbox-v-6c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal')
+					legend Horizontal:
+					input#checkbox-h-2a(type='checkbox', name='checkbox-h-2a')
+					label(for='checkbox-h-2a') One
+					input#checkbox-h-2b(type='checkbox', name='checkbox-h-2b')
+					label(for='checkbox-h-2b') Two
+					input#checkbox-h-2c(type='checkbox', name='checkbox-h-2c')
+					label(for='checkbox-h-2c') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal', data-mini='true')
+					legend Horizontal, mini sized:
+					input#checkbox-h-6a(type='checkbox', name='checkbox-h-6a')
+					label(for='checkbox-h-6a') One
+					input#checkbox-h-6b(type='checkbox', name='checkbox-h-6b')
+					label(for='checkbox-h-6b') Two
+					input#checkbox-h-6c(type='checkbox', name='checkbox-h-6c')
+					label(for='checkbox-h-6c') Three
+		//
+			/demo-html
+		h2 Selects
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup')
+					legend Vertical:
+					label(for='select-v-2a') Select A
+					select#select-v-2a(name='select-v-2a')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-v-2b') Select B
+					select#select-v-2b(name='select-v-2b')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-v-2c') Select C
+					select#select-v-2c(name='select-v-2c')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-mini='true')
+					legend Vertical, mini sized:
+					label(for='select-v-6a') Select A
+					select#select-v-6a(name='select-v-6a')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-v-6b') Select B
+					select#select-v-6b(name='select-v-6b')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-v-6c') Select C
+					select#select-v-6c(name='select-v-6c')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal')
+					legend Horizontal:
+					label(for='select-h-2a') Select A
+					select#select-h-2a(name='select-h-2a')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-h-2b') Select B
+					select#select-h-2b(name='select-h-2b')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-h-2c') Select C
+					select#select-h-2c(name='select-h-2c')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html
+		div(data-demo-html='true')
+			form
+				fieldset(data-role='controlgroup', data-type='horizontal', data-mini='true')
+					legend Horizontal, mini sized:
+					label(for='select-h-6a') Select A
+					select#select-h-6a(name='select-h-6a')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-h-6b') Select B
+					select#select-h-6b(name='select-h-6b')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+					label(for='select-h-6c') Select C
+					select#select-h-6c(name='select-h-6c')
+						option(value='#') One
+						option(value='#') Two
+						option(value='#') Three
+		//
+			/demo-html

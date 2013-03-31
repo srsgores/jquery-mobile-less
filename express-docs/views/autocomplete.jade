@@ -1,0 +1,156 @@
+extends layout
+
+block content
+	article.jqm-content(data-role='content')
+		h1 Autocomplete
+			a.jqm-api-link(href='http://api.jquerymobile.com/listview/#option-filter', data-ajax='false', data-role='button', data-inline='true', data-mini='true', data-icon='arrow-r', data-iconpos='right') API
+		p.jqm-intro
+			| An autocomplete widget backed by either local or remote data can be created by leveraging
+			| the listview filter feature.
+		h2 Remote data
+		p
+			| To use the listview filter as an autocomplete that taps into remote data sources, you can use the
+			code listviewbeforefilter
+			| event to dynamically populate a listview as a user types a search query.
+			a(href='autocomplete-remote', data-ajax='false') Remote autocomplete demo
+		h2#autocomplete-local Local data
+		p
+			| The filter reveal feature makes is easy to build a simple autocomplete with local data. When a filterable
+			| list has the
+			code data-filter-reveal="true"
+			| , it will auto-hide all the list items when the search
+			| field is blank. The
+			code data-filter-placeholder
+			| attribute can be added to specify the placeholder
+			| text for the filter.
+		p
+			| Any listview filter with more than 100-200 items may be slow to perform on a mobile device so we recommend
+			| using this feature for autocomplete situations with a relatively small number of items.
+		h4 Full width listview (non-inset)
+		div(data-demo-html='true')
+			ul(data-role='listview', data-filter='true', data-filter-reveal='true', data-filter-placeholder='Search cars...')
+				li
+					a(href='#') Acura
+				li
+					a(href='#') Audi
+				li
+					a(href='#') BMW
+				li
+					a(href='#') Cadillac
+				li
+					a(href='#') Chrysler
+				li
+					a(href='#') Dodge
+				li
+					a(href='#') Ferrari
+				li
+					a(href='#') Ford
+				li
+					a(href='#') GMC
+				li
+					a(href='#') Honda
+				li
+					a(href='#') Hyundai
+				li
+					a(href='#') Infiniti
+				li
+					a(href='#') Jeep
+				li
+					a(href='#') Kia
+				li
+					a(href='#') Lexus
+				li
+					a(href='#') Mini
+				li
+					a(href='#') Nissan
+				li
+					a(href='#') Porsche
+				li
+					a(href='#') Subaru
+				li
+					a(href='#') Toyota
+				li
+					a(href='#') Volkswagen
+				li
+					a(href='#') Volvo
+		//
+			/demo-html
+		h4 Inset listiew
+		div(data-demo-html='true')
+			ul(data-role='listview', data-inset='true', data-filter='true', data-filter-reveal='true', data-filter-placeholder='Search cars...')
+				li
+					a(href='#') Acura
+				li
+					a(href='#') Audi
+				li
+					a(href='#') BMW
+				li
+					a(href='#') Cadillac
+				li
+					a(href='#') Chrysler
+				li
+					a(href='#') Dodge
+				li
+					a(href='#') Ferrari
+				li
+					a(href='#') Ford
+				li
+					a(href='#') GMC
+				li
+					a(href='#') Honda
+				li
+					a(href='#') Hyundai
+				li
+					a(href='#') Infiniti
+				li
+					a(href='#') Jeep
+				li
+					a(href='#') Kia
+				li
+					a(href='#') Lexus
+				li
+					a(href='#') Mini
+				li
+					a(href='#') Nissan
+				li
+					a(href='#') Porsche
+				li
+					a(href='#') Subaru
+				li
+					a(href='#') Toyota
+				li
+					a(href='#') Volkswagen
+				li
+					a(href='#') Volvo
+		//
+			/demo-html
+		h2#autocomplete-filtertext Providing richer search content
+		p
+			| By default, the listview filter simply searches against the contents of each list item. If you want the
+			| filter to search against different content, add the
+			code data-filtertext
+			| attribute to the item and
+			| populate it with one or many keywords and phrases that should be used to match against. Note that if this
+			| attribute is added, the contents of the list item are ignored.
+		p
+			| This attribute is useful for dealing with allowing for ticker symbols and full company names to be searched,
+			| or for covering common spellings and abbreviations for countries.
+		pre.
+
+		ul(data-role='listview', data-filter='true', data-filter-placeholder='Search ticker or firm name...', data-inset='true')
+			li(data-filtertext='NASDAQ:ADBE Adobe Systems Incorporated')
+				a(href='#') Adobe
+			li(data-filtertext='NASDAQ:AMZNL Amazon.com, Inc.')
+				a(href='#') Amazon
+			li(data-filtertext='NASDAQ:AAPL Apple Inc.')
+				a(href='#') Apple
+			li(data-filtertext='NASDAQ:GOOG Google Inc.')
+				a(href='#') Google
+			li(data-filtertext='NYSE:IBM Intl. International Business Machines Corp.')
+				a(href='#') IBM
+			li(data-filtertext='NASDAQ:MSFT Microsoft Corporation')
+				a(href='#') Microsoft
+			li(data-filtertext='NASDAQ:YHOO Yahoo! Inc.')
+				a(href='#') Yahoo
+			li(data-filtertext='USA U.S.A. United States of America')
+				a(href='#') United States
