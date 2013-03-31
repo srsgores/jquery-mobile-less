@@ -1,7 +1,182 @@
-//
-	Created with JetBrains PhpStorm.
-	User: Sean
-	Date: 2/26/13
-	Time: 7:58 PM
-	To change this template use File | Settings | File Templates.
+extends layout
 
+block content
+	article.jqm-content(data-role='content')
+		h1 Accordions
+		a.jqm-api-link(href='http://api.jquerymobile.com/collapsible-set/', data-ajax='false', data-role='button', data-inline='true', data-mini='true', data-icon='arrow-r', data-iconpos='right') API
+		p.jqm-intro
+			| An accordion is created in jQuery Mobile by grouping a series of individual collapsibles into
+			| set.
+		h2#accordion-markup Markup
+		p
+			| Collapsible sets start with the same markup as
+			a(href='../collapsibles/', data-ajax='false')
+				| individual
+				| collapsibles
+			| which have a heading followed by the collapsible content. By adding a parent wrapper with a
+			code data-role="collapsible-set"
+			| attribute to the collapsibles they will be visually grouped and they
+			| will behave like an accordion so only one section can be open at a time.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-theme='c', data-content-theme='d')
+				div(data-role='collapsible')
+					h3 Section 1
+					p I'm the collapsible content for section 1
+				div(data-role='collapsible')
+					h3 Section 2
+					p I'm the collapsible content for section 2
+				div(data-role='collapsible')
+					h3 Section 3
+					p I'm the collapsible content for section 3
+		h2#accordion-inline Inset vs. full width
+		p
+			| For full width collapsibles without corner styling add the
+			code data-inset="false"
+			| attribute to the set.
+			| This makes the collapsible set look more like an expandable
+			a(href='../listviews/') listview
+			| .
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-inset='false')
+				div(data-role='collapsible')
+					h3 Animals
+					ul(data-role='listview', data-inset='false')
+						li Cats
+						li Dogs
+						li Lizards
+						li Snakes
+				div(data-role='collapsible')
+					h3 Cars
+					ul(data-role='listview', data-inset='false')
+						li Acura
+						li Audi
+						li BMW
+						li Cadillac
+				div(data-role='collapsible')
+					h3 Planets
+					ul(data-role='listview', data-inset='false')
+						li Earth
+						li Jupiter
+						li Mars
+						li Mercury
+		h2#accordion-mini Mini
+		p
+			| For a more compact version that is useful in tight spaces, add the
+			code data-mini="true"
+			| attribute to the
+			| set.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-theme='c', data-content-theme='d', data-mini='true')
+				div(data-role='collapsible')
+					h3 I'm a mini collapsible
+					p This is good for tight spaces.
+				div(data-role='collapsible')
+					h3 I'm another mini
+					p Here's some collapsible content.
+				div(data-role='collapsible')
+					h3 Last one
+					p Final bit of collapsible content.
+		h2#accordion-icons Icons
+		p
+			| The default icons of collapsible headings can be overridden by using the
+			code data-collapsed-icon
+			| and
+			code data-expanded-icon
+			| attributes, either at the
+			code collapsible-set
+			| level or on any of its
+			| collapsibles individually.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-theme='c', data-content-theme='d', data-collapsed-icon='arrow-r', data-expanded-icon='arrow-d')
+				div(data-role='collapsible')
+					h3 Icon set on the set
+					p
+						| Specify the open and close icons on the set to apply it to all the collapsibles within.
+				div(data-role='collapsible')
+					h3 Icon set on the set
+					p This collapsible also gets the icon from the set.
+				div(data-role='collapsible', data-collapsed-icon='gear', data-expanded-icon='delete')
+					h3 Icon set on this collapsible
+					p
+						| The icons here are applied to this collapsible specifically, thus overriding the set icons.
+		h2#accordion-icon-position Icon position
+		p
+			| The default icon positioning of collapsible headings can be overridden by using the
+			code data-iconpos
+			| attribute, either at the
+			code collapsible-set
+			| level or on any of its collapsibles individually.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-theme='c', data-content-theme='d', data-iconpos='right')
+				div(data-role='collapsible')
+					h3 Right
+					p
+						| Inherits icon positioning from
+						code data-iconpos="right"
+						| attribute on set.
+				div(data-role='collapsible', data-iconpos='left')
+					h3 Left
+					p
+						| Set via
+						code data-iconpos="left"
+						| attribute on the collapsible
+				div(data-role='collapsible', data-iconpos='bottom')
+					h3 Bottom
+					p
+						| Set via
+						code data-iconpos="bottom"
+						| attribute on the collapsible
+				div(data-role='collapsible', data-iconpos='top')
+					h3 Top
+					p
+						| Set via
+						code data-iconpos="top"
+						| attribute on the collapsible
+		h2#accordion-corners Corners
+		p
+			| Add the
+			code data-corners="false"
+			| attribute to get an inset collapsible set without rounded corners.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-corners='false', data-theme='c', data-content-theme='d')
+				div(data-role='collapsible')
+					h3 Section 1
+					p Collapsible content
+				div(data-role='collapsible')
+					h3 Section 2
+					p Collapsible content
+				div(data-role='collapsible')
+					h3 Section 3
+					p Collapsible content
+		h2#accordion-theme Theme
+		p
+			| Add a
+			code data-theme
+			| attribute to the set to set the color of each collapsible header in a set. Add the
+			code data-content-theme
+			| attribute to specify the color of the collapsible content.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-theme='a', data-content-theme='a')
+				div(data-role='collapsible')
+					h3 1 - Theme A
+					p Content theme A
+				div(data-role='collapsible')
+					h3 2 - Theme A
+					p Content theme A
+		p
+			| To have individual sections in a group styled differently, add
+			code data-theme
+			| and
+			code data-content-theme
+			| attributes to specific collapsibles.
+		div(data-demo-html='true')
+			div(data-role='collapsible-set', data-content-theme='c')
+				div(data-role='collapsible', data-theme='b', data-content-theme='b')
+					h3 Section header, swatch B
+					p Collapsible content, swatch "b"
+				div(data-role='collapsible', data-theme='a', data-content-theme='a')
+					h3 Section header, swatch A
+					p Collapsible content, swatch "a"
+				div(data-role='collapsible', data-theme='e', data-content-theme='d')
+					h3 Section header, swatch E
+					p Collapsible content, swatch "d"

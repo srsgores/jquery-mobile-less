@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	#dialog-success(data-role='page', data-dom-cache='true')
+		div(data-role='header', data-theme='e')
+			h1 Dialog
+		div(data-role='content', data-theme='e')
+			p
+				| That was an animated page transition effect to a dialog that we added with a
+				code data-transition
+				| attribute on the link.
+			p
+				| Since it uses CSS animations, this should be hardware accelerated on many devices. To see transitions, 3D
+				| transform support is required so if you only saw a fade transition that's the reason.
+			a(href='index.php', data-role='button', data-theme='b', data-rel='back') Take me back
+	#page-success(data-role='page')

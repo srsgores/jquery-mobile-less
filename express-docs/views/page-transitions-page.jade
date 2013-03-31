@@ -1,7 +1,39 @@
-//
-	Created with JetBrains PhpStorm.
-	User: Sean
-	Date: 2/26/13
-	Time: 9:04 PM
-	To change this template use File | Settings | File Templates.
+extends layout
 
+block content
+	#page-success(data-role='page', data-dom-cache='true')
+		div(data-role='header', data-theme='a')
+			h1 Page
+		div(data-role='content', data-theme='d')
+			p
+				| That was an animated page transition effect to a page that we added with a
+				code data-transition
+				| attribute on the link. This uses a different background theme swatch to see how that looks with the
+				| transitions.
+			p
+				| Since it uses CSS animations, this should be hardware accelerated on many devices. To see transitions, 3D
+				| transform support is required so if you only saw a fade transition that's the reason.
+			form(action='#', method='get')
+				h2 Here's a few form elements
+				p These are here to see if this slows down rendering.
+				div(data-role='fieldcontain')
+					label(for='name') Text Input:
+					input#name(type='text', name='name', value='')
+				div(data-role='fieldcontain')
+					label(for='textarea') Textarea:
+					textarea#textarea(cols='40', rows='8', name='textarea')
+				div(data-role='fieldcontain')
+					label(for='slider2') Flip switch:
+					select#slider2(name='slider2', data-role='slider')
+						option(value='off') Off
+						option(value='on') On
+				div(data-role='fieldcontain')
+					label(for='slider') Slider:
+					input#slider(type='range', name='slider', value='0', min='0', max='100', data-highlight='true')
+			a(href='index.php', data-role='button', data-theme='b', data-rel='back', data-inline='true')
+				| Take me
+				| back
+		div(data-role='footer', data-theme='d')
+			div(style='margin: 5px 10px;')
+				label.ui-hidden-accessible(for='search') Search:
+				input#search(type='search', name='password', placeholder='Search...', value='')
