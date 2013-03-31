@@ -2,45 +2,24 @@
 @import "jquery.mobile.transition.slideout.keyframes.less";
 
 .slide.out, .slide.in {
-	-webkit-animation-timing-function: ease-out;
-	-webkit-animation-duration: 350ms;
-	-moz-animation-timing-function: ease-out;
-	-moz-animation-duration: 350ms;
-	animation-timing-function: ease-out;
-	animation-duration: 350ms;
+    .animation(none, .35s, 0, ease-out);
 }
 .slide.out {
-	-webkit-transform: translateX(-100%);
-	-webkit-animation-name: slideouttoleft;
-	-moz-transform: translateX(-100%);
-	-moz-animation-name: slideouttoleft;
-	transform: translateX(-100%);
-	animation-name: slideouttoleft;
+    .animation(slideouttoleft);
+    .translate(-100%);
 }
 
 .slide.in {
-	-webkit-transform: translateX(0);
-	-webkit-animation-name: slideinfromright;
-	-moz-transform: translateX(0);
-	-moz-animation-name: slideinfromright;
-	transform: translateX(0);
-	animation-name: slideinfromright;
+    .animation(slideinfromright);
+    .translate(0);
 }
 
 .slide.out.reverse {
-	-webkit-transform: translateX(100%);
-	-webkit-animation-name: slideouttoright;
-	-moz-transform: translateX(100%);
-	-moz-animation-name: slideouttoright;
-	transform: translateX(100%);
-	animation-name: slideouttoright;
+    .animation(slideouttoright);
+    .translate(100%);
 }
 
 .slide.in.reverse {
-	-webkit-transform: translateX(0);
-	-webkit-animation-name: slideinfromleft;
-	-moz-transform: translateX(0);
-	-moz-animation-name: slideinfromleft;
-	transform: translateX(0);
-	animation-name: slideinfromleft;
+    .animation(slideinfromleft);
+    .translate(0);
 }
